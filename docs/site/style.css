@@ -24,16 +24,15 @@
 #foo h1 {
 	color: var(--color1);
   }
-.icon-byui-logo:before {
+.logo:before {
   content: "\e000";
   box-sizing: border-box;
 }
 
-.icon-byui-logo {
-  font-size:75px;
+.logo {
   color:var(--color1);
   float:left;
-  padding-top:0px;
+  height:56px;
 
   font-family: 'icomoon';
   speak: none;
@@ -206,7 +205,7 @@ aside.pull-right, aside.pull-left {
 	position: absolute;
 	right: 5px;
 	width: 200px;
-	background: #006AB9;
+	background: var(--color9);
 	padding: 13px;
 	margin: 0 1.5%;
 }
@@ -238,7 +237,7 @@ ol  {
 ol li {
 	list-style: decimal-leading-zero;
 	font-size: 18px;
-	color: #006AB9;
+	color: var(--color9);
 	margin-bottom: 1em;
 	border-left: 2px solid #CCC;
 }
@@ -249,6 +248,9 @@ h3:before {
     margin-right: 10px;
 }
 
+a {
+	color: var(--color2) !important;
+}
 li p {
 	font-size: 18px;
 	margin-bottom: 0.5em;
@@ -267,7 +269,7 @@ ol ul li {
 
 ul li p:before {
 	content: "»";
-	color: #006AB9;
+	color: var(--color9);;
 	font-size: 24px;
 	margin-right: 0.5em;
 }
