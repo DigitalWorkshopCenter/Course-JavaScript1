@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Computer Setup and Account Creation</h1>
+
+        <h2>Overview</h2>
+        <p>Please be sure to complete all of these before continuing.</p>
+        <ul>
+            <li>
+                <p>
+                    <heading><a href="#vsCode">Visual Studio Code</a></heading> - The text editor that will be used in
+                    the course
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#teams">Teams </a></heading> - For all course communication and collaboration
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#github">Github </a></heading> - To store and submit your code throughout the
+                    semester.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#newRepo">Github Pages </a></heading> - Program on your computer that allows you
+                    to work with
+                    github.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#git">Git </a></heading> - Program on your computer that allows you to work with
+                    github.
+                </p>
+            </li>
+        </ul>
+        <h2>Getting all set up</h2>
+        <h3><a id="vsCode">Visual Studio Code</a></h3>
+        <p>There are many technologies and integrated development environments available to designers and developers. If
+            you look at current job descriptions referencing front-end web design and development, you will find that
+            qualification statements center on core technologies including HTML, CSS, and JavaScript versus specific
+            development software tools. Sometimes preferred development technologies are listed, and they are specific
+            to that organization. The debate about the best tool to use is ongoing and opinionated. The intent of this
+            class is not to teach a tool but rather provide a firm foundation in core web technologies.</p>
+        <p>Visual Studio (VS) Code is one of many markup editors that can be used for front-end web design and
+            development. This course uses VS Code as the recommended editor because it is free, popular in the industry
+            (as shown by <a href="https://insights.stackoverflow.com/survey/2018#development-environments-and-tools"
+                target="_blank">Stack Overflow</a>), and easy to use. In addition, VS Code works on the common system
+            platforms of Windows, macOS, and Linux. It will behave basically the same on all of these operating systems
+            and has a very active development cycle and online support system which means it is being updated regularly
+            and new tools are developed regularly. This course will will use the VS Code editor to write HTML, CSS, and
+            JavaScript. In addition, VS Code has git technology and services built into the editor. This allows you to
+            practice source control and publish your local content to a remote GitHub Pages repository for user
+            consumption on a public domain name.</p>
+        <h4>Download and Install Instructions</h4>
+        <img src="images/read1.png" alt="vs code installation" class="img-tutorial">
+        <p>Install the Visual Studio Code programming environment on your local system and become familiar with some
+            basic operations, tooling, and features.</p>
+        <ul>
+            <li>
+                <p>Navigate to the <a href="https://code.visualstudio.com/">Visual Studio Code installation page.</a>
+            </li>
+            <li>
+                <p>Download the stable build for your platform OS.</p>
+            </li>
+            <li>
+                <p>Note that by downloading and using VS Code, you agree to the <a
+                        href="https://code.visualstudio.com/license">license terms</a> and <a
+                        href="http://go.microsoft.com/fwlink/?LinkID=528096&amp;clcid=0x409">privacy statement</a>.</p>
+            </li>
+            <li>
+                <p>Locate the download and start the installation for your platform as guided by the installation
+                    routine.</p>
+            </li>
+            <li>
+                <p>Proceed through all the steps as given until VS Code is installed and verify that you can start VS
+                    Code.</p>
+            </li>
+            <li>
+                <p>Install the <strong>Live Server</strong> extension in VS Code. This extension will launch a local
+                    Server instance of our page on our default browser for testing and has live reload features.</p>
+            </li>
+            <li>
+                <p>Install the <strong>Beautify</strong>&nbsp;extension in VS Code. This extension will auto format our
+                    code with proper indentation to increase human readability.</p>
+            </li>
+        </ul>
+
+
+
+
+
+        <h4>Other Helpful Resources</h4>
+        <p>You may also watch the following media content that include helpful tips and
+            tricks to help you work efficiently with this program. </p>
+        <ul>
+            <li>
+                <p><a href="https://cdnapisec.kaltura.com/p/1157612/sp/115761200/embedIframeJs/uiconf_id/33020032/partner_id/1157612?iframeembed=true&playerId=kaltura_player_1529607806&entry_id=0_vw7khbi3&flashvars%5BstreamerType%5D=auto"
+                        target="_blank">Installing Video Studio Code Demonstration</a></p>
+            </li>
+            <li>
+                <p><a href="https://video.byui.edu/media/t/0_szmrm0si" target="_blank">VS Code Environment Tour</a></p>
+            </li>
+
+            <li>
+                <p><a href="https://www.youtube.com/watch?v=VqCgcpAypFQ" target="_blank">Visual Studio Code Tutorial for
+                        Beginners - Introduction (By Academind)</a></p>
+            </li>
+            <li>
+                <p><a href="https://code.visualstudio.com/docs/introvideos/basics">Getting started with Visual Studio
+                        Code</a></p>
+            </li>
+            <li>
+                <p><a href="https://code.visualstudio.com/docs/languages/html">HTML in Visual Studio Code</a></p>
+            </li>
+            <li>
+                <p><a href="https://code.visualstudio.com/docs/languages/css">CSS, SCSS and Less with VS Code</a></p>
+            </li>
+            <li>
+                <p>Command Cheat Sheets for&nbsp;<a
+                        href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Windows</a>, <a
+                        href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">macOS</a>,
+                    and&nbsp;<a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf">Linux</a>
+                </p>
+            </li>
+        </ul>
+
+        <h3 id="teams">Microsoft Teams</h3>
+        <p>Follow <a href="https://www.microsoft.com/en-us/microsoft-teams/download-app" target="_blank">this link</a>
+            to download and install Microsoft Teams on
+            your computer. Teams will be used for all course communication, discussions, troubleshooting and
+            collaboration. For this purpose, you're also encouraged to install it on your mobile device. Once you have
+            installed it, log in with your byui email and credentials. You will then see our WDD230 team that you've
+            been invited to. </p>
+        <p>Before you get started in Teams, please take a moment to read about <a
+                href="https://www.avepoint.com/ebook/microsoft-teams-best-practices">Teams productivity tips and
+                etiquette here</a>.</p>
+
+        <h3 id="github">Github</h3>
+        <p>GitHub is a free collaboration and version control online service. You can think of the GitHub repositories
+            as a cloud-based storage system for your projects. GitHub can be used as an web hosting service with a
+            special repository named GitHub Pages. We will use GitHub Pages to publish assignments in this course.
+            GitHub is based upon Git—a version control framework (software).</p>
+        <p>Think of repositories as folders. They are special folders in that they are linked and supported by
+            collaborative and file history information, all of which is hidden in the background. You will be working
+            with a local repository, i.e., a folder on your computer system, that is linked to a remote repository on
+            GitHub. You will work locally and then when you are ready to publish to the web, you will upload or push the
+            content to the remote, duplicate repository.</p>
+        <h4>Instructions</h4>
+        <p>If you have a Github account, you do not need to do this.</p>
+        <ul>
+            <li>
+                <p>Navigate in your browser to <a href="https://github.com/" target="_blank">github.com</a>.</p>
+            </li>
+            <li>
+                <p>Create a username, enter your BYU-Idaho email address, and create a password to obtain an account and
+                    click the button 'Sign Up for GitHub'.</p>
+            </li>
+            <li>
+                <p>Record your username and password in a secure and logical location.</p>
+            </li>
+            <li>
+                <p>Choose the public option in the next screen and continue to the next step.</p>
+            </li>
+            <li>
+                <p>In the final screen of the setup, select your preferences to create your account.</p>
+            </li>
+            <li>
+                <p>Verify your account through the email that is sent to your BYU-Idaho email address.</p>
+            </li>
+            <li>
+                <p>Verify that your GitHub account is active by navigating in your browser to
+                    https://github.com/yourusername. </p>
+            </li>
+        </ul>
+        <h3 id="newRepo">Create a new Repo and set up Github Pages</h3>
+        <p>"GitHub Pages is a static site hosting service designed to host your personal, organization, or project pages
+            directly from a GitHub repository" &mdash;<a
+                href="https://help.github.com/en/enterprise/2.13/user/articles/what-is-github-pages">What is GitHub
+                Pages?</a></p>
+        <p>In this course, you will be publishing your weekly web work to your GitHub Pages hosted site. The instructor
+            will then be able to access your site and conduct feedback and assessment as needed. This whole process of
+            file management, working with repositories, and version control is also a skill set that is required in
+            front-end web design and development. You have already established a GitHub account, and you will now make a
+            special, GitHub Pages repository which will host your web work.</p>
+        <p>You will need to name your repository <strong>exactly</strong> as demonstrated.</p>
+        <h5>Part 1: Create the GitHub Pages Repository</h5>
+        <p><a
+                href="https://cdnapisec.kaltura.com/p/1157612/sp/115761200/embedIframeJs/uiconf_id/33020032/partner_id/1157612?iframeembed=true&playerId=kaltura_player_1529615159&entry_id=0_up8ik2ua&flashvars%5BstreamerType%5D=auto">Setting
+                Up GitHub Pages Demonstration</a></p>
+        <ol>
+            <li>Sign in to your <a href="https://github.com" target="_blank">GitHub.com</a> account.</li>
+            <li>Create a new private repository by either clicking the plus symbol at the upper-right portion of the
+                screen and selecting <strong>New repository</strong> or clicking the <strong>New repository</strong>
+                green button if you are on the GitHub generic home page.</li>
+            <li>On the new repository screen, enter the new <strong>repository name</strong> using your owner/username
+                followed by ".github.io". For example, if my username was "orsonpratt", my repository name should be
+                entered as "orsonpratt.github.io" in the text box provided.
+                <br />
+                <span>Do not leave off the username as many students think it is already provided. It is NOT already
+                    provided, rather the username shown before the textbox is indicating in what folder or user this
+                    repository is being created, thus the front slash. Note this example:
+                    <br />
+                    <img src="images/read7.png" class="img-tutorial" alt="">
+                    <br />
+                </span>
+            </li>
+            <li>Provide a <strong>description</strong> of the repository.</li>
+            <li>Select the <strong>Public</strong> option.&nbsp;</li>
+            <li>You do not need to initialize this repo with a README markdown (MD) file nor add any other files at this
+                point.</li>
+            <li>Finally, click the green <strong>Create Repository</strong> button.</li>
+        </ol>
+        <div
+            style="background-color: #ffffe5; padding: 10px; border: 1px solid #ccc; font-size: .9rem; margin-bottom: 15px; color: #000;">
+            <p>If you make a mistake with the repository name, delete the repository using the repository's settings
+                menu.</p>
+            <p>Video: <a
+                    href="https://cdnapisec.kaltura.com/p/1157612/sp/115761200/embedIframeJs/uiconf_id/33020032/partner_id/1157612?iframeembed=true&amp;playerId=kaltura_player_1529615489&amp;entry_id=0_7h04ikxn&amp;flashvars%5BstreamerType%5D=auto"
+                    target="_blank" rel="noopener">Delete a Repository Demonstration</a>
+            </p>
+        </div>
+        <br />
+        <h3 id="git">
+            Using GitHub Pages with Visual Studio Code
+        </h3>
+        <div
+            style="background-color: #dbf3fa; padding: 10px; border: 1px solid #ddd; font-size: .9rem; margin: 0 15px 15px; color: #000;">
+            <p>Video: <a href="https://video.byui.edu/media/t/0_30oe3337">Using GitHub Pages with VS Code
+                    Demonstration</a>
+            </p>
+        </div>
+        <img class="half right" style="margin: 10px; border: 1px solid #000; padding: 2px;"
+            src="https://byui.instructure.com/courses/139188/files/56977746/download?wrap=1" alt="Download Git"
+            data-api-endpoint="https://byui.instructure.com/api/v1/courses/139188/files/56977746"
+            data-api-returntype="File" />
+        <ol>
+            <li>You will need to install git services before you can use git commands directly within Visual Studio
+                Code. Navigate to <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>&nbsp;in your
+                browser and download the appropriate version for your platform.</li>
+            <li><strong>Install</strong> git on your computer using the default options.</li>
+            <li><strong>Open</strong> up an interface to the command line using the command window (Windows) or
+                <em>Terminal</em> application (Mac).
+                <br /><strong>Using the Command Line</strong>
+                <br />
+                <span style="font-size: 10pt;"><strong>Command (Windows):</strong> Press <em>WinKey + R</em> keys on
+                    your keyboard. Type <em>cmd</em>&nbsp;in the dialog box and then click Enter or OK to start the
+                    command window application.</span>
+                <br />
+                <span style="font-size: 10pt;"><strong>Terminal on Mac:</strong> The <em>Terminal</em> application is
+                    found within the utilities folder in <em>Applications</em>. Additional install helps if needed for
+                    Mac users: <a class="instructure_file_link instructure_scribd_file"
+                        title="Local computer Git install for Mac.pdf"
+                        href="https://byui.instructure.com/courses/139188/files/56977910/download?wrap=1"
+                        data-api-endpoint="https://byui.instructure.com/api/v1/courses/139188/files/56977910"
+                        data-api-returntype="File">Mac Install Notes</a>
+                    <br />
+                    <br />
+                </span>
+            </li>
+            <li><strong>Run two git config commands</strong>&nbsp;by pressing the enter key after you enter each line
+                carefully as given below using your own credentials which establishes your git global user.name and
+                user.email.
+                <br />
+                <pre><code class="language-git">git config --global user.name "<em>Use your GitHub username</em>"</code></pre>
+                <pre><code class="language-git">git config --global user.email "<em>Enter your email address</em>"</code></pre>
+            </li>
+            <li>You can now close the command or terminal window.</li>
+            <li>On your GitHub pages site, copy your GitHub Pages <strong>repository URL</strong>.
+                <br />
+                <img src="https://byui.instructure.com/courses/139188/files/56977822/download?wrap=1"
+                    alt="GitHub Pages Repo Full URL"
+                    data-api-endpoint="https://byui.instructure.com/api/v1/courses/139188/files/56977822"
+                    data-api-returntype="File" />
+                <span style="font-size: 10pt;">
+                    <br />
+                </span>- <span style="font-size: 10pt;">Please note that when we talk about the corresponding GitHub
+                    Pages URL, it is<a href="https://github.com/susanbsmith/susanbsmith.github.io">
+                        https://susanbsmith.github.io</a>. The example above is the repository URL.</span>
+            </li>
+            <li>Launch or relaunch&nbsp;<strong>Visual Studio Code</strong>.</li>
+            <li>In VS Code, open up the <strong>Command Palette</strong> from the <strong>View</strong> menu.
+                <br />
+                <span style="font-size: 10pt;">- The command palette can be opened using a keyboard shortcut - F1 or
+                    Ctrl+Shift+P (Mac: Command+Shift+P)</span>
+            </li>
+            <li>Type <em><strong>git clone</strong></em> in the command line provided and enter.</li>
+            <li>Paste the copied URL from step 1 into the text input area provided labeled <strong>Repository
+                    URL</strong>. Press 'Enter' to confirm.</li>
+            <li><strong>Select</strong> a folder or create a new folder on your local computer that will be the location
+                of your local repository and that is linked to the GitHub Pages remote repository. Use the dialog box to
+                select the correct host folder.<span style="color: #ff0000;"><strong>
+                        <br />VS Code will create a sub-folder named after your GitHub Pages domain.
+                    </strong></span>
+                <br />This will be your working folder for the class assignments that are to be published.
+            </li>
+            <li>Note the notification that pops up on the VS Code screen in the lower right corner. Go ahead and click
+                <strong>Open Repository</strong>. This will direct your VS Code Explorer to open that folder location.
+                This folder location will be empty of course.
+            </li>
+            <li>You are now ready to build organized web content within this local folder/repository.
+                <br />You may wish to click <em><strong>File -&gt; Open Folder</strong></em> to view the folder location
+                and review how it was named.
+            </li>
+        </ol>
+        <hr />
+        <h3>Optional Resources</h3>
+        <ul>
+            <li>
+                <a href="https://pages.github.com/" target="_blank" rel="noopener">What are GitHub Pages and how to get
+                    started?</a>
+            </li>
+            <li>
+                <a href="https://help.github.com/articles/what-is-github-pages/" target="_blank" rel="noopener">GitHub
+                    Pages Documentation and Guidelines</a>
+            </li>
+            <li>
+                <a href="https://www.codecademy.com/courses/deploy-a-website/lessons/github-pages/exercises/create-repo"
+                    target="_blank" rel="noopener">CodeCademy Tutorial on setting up GitHub Pages</a>
+            </li>
+        </ul>
+
+
+
+
+    </article>
+</body>
+
+</html>
