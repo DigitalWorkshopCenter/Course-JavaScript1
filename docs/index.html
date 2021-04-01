@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +12,18 @@
     <script type="text/javascript" src="site/global.js"></script>
     <title>Course Description</title>
     <script>
-        window.onload = function(){
+        window.onload = function () {
+            $(function () {
+                $("#includedHeader").load("site/header.html");
+            });
             document.getElementById('g_u01').innerHTML = g.u01;
             document.getElementById('g_u02').innerHTML = g.u02;
             document.getElementById('g_u03').innerHTML = g.u03;
             document.getElementById('g_u04').innerHTML = g.u04;
             document.getElementById('g_u05').innerHTML = g.u05;
-            document.getElementById('g_u06').innerHTML = g.u06;
-            document.getElementById('g_u07').innerHTML = g.u07;
-            document.getElementById('g_u08').innerHTML = g.u08;
-            document.getElementById('g_u09').innerHTML = g.u09;
-            document.getElementById('g_u10').innerHTML = g.u10;
-            document.getElementById('g_u11').innerHTML = g.u11;
-            document.getElementById('g_u12').innerHTML = g.u12;
-            document.getElementById('g_u13').innerHTML = g.u13;  
         };
     </script>
     <script>
-        $(function () {
-            $("#includedHeader").load("site/header.html");
-        });
     </script>
 </head>
 
@@ -38,23 +31,61 @@
     <div id="includedHeader"></div>
     <article>
         <h1>Course Description</h1>
-        <p>The course content found in these webpages was developed by Nathan Birch to fulfill the Performance Based Objectives of the <a href="https://digitalworkshopcenter.com/classes/frontend-web-development-classes/javascript-classes/javascript-beginners-level-1/" target="_blank">JavaScript Level 1</a> course developed and managed by the <a href="https://digitalworkshopcenter.com/" target="_blank">Digital Workshop Center</a> company.</p>
-        <iframe src="https://digitalworkshopcenter.com/classes/frontend-web-development-classes/javascript-classes/javascript-beginners-level-1/" style="width:100%; height:500px" title="description"></iframe>
+        <p>The course content found in these webpages was developed by Nathan Birch to fulfill the Performance Based
+            Objectives of the <a
+                href="https://digitalworkshopcenter.com/classes/frontend-web-development-classes/javascript-classes/javascript-beginners-level-1/"
+                target="_blank">JavaScript Level 1</a> course developed and managed by the <a
+                href="https://digitalworkshopcenter.com/" target="_blank">Digital Workshop Center</a> educational
+            institution.</p>
+        <!-- <iframe src="https://digitalworkshopcenter.com/classes/frontend-web-development-classes/javascript-classes/javascript-beginners-level-1/" style="width:100%; height:500px" title="description"></iframe> -->
         <h1>Performance Based Objectives</h1>
+        <p>Upon successful completion of the JavaScript Beginners class, students will be able to:</p>
         <ul>
-            <li><p>Introduction to JavaScript</p></li>
-            <li><p>Values / Types / Operators</p></li>
-            <li><p>Execution Environments</p></li>
-            <li><p>Variables</p></li>
-            <li><p>Expressions and Statements</p></li>
-            <li><p>Syntax</p></li>
-            <li><p>Control Flow</p></li>
-            <li><p>Data structures including objects, primitive vs reference types, arrays, looping</p></li>
-            <li><p>Native variable typesFunctions</p></li>
-            <li><p>The DOM (Document Object Model)</p></li>
-            <li><p>EnvironmentsForms - elements and validation</p></li>
-            <li><p>Creating a simple JavaScript web application (project-based work)</p></li>
-            <li><p>Working on an intermediate JavaScript application (project-based work)</p></li>
+            <li>
+                <p>Understand an Introduction to JavaScript</p>
+            </li>
+            <li>
+                <p>Use values, types, variables, and expressions</p>
+            </li>
+            <li>
+                <p>Apply control flow and proper syntax</p>
+            </li>
+            <li>
+                <p>Implement data structures and functions</p>
+            </li>
+            <li>
+                <p>Review the DOM (Document Object Model)</p>
+            </li>
+            <li>
+                <p>Add custom events</p>
+            </li>
+            <li>
+                <p>Build your own form elements and validation</p>
+            </li>
+            <li>
+                <p>Create a simple JavaScript web application</p>
+            </li>
+            <li>
+                <p>Work on an advanced website incorporating a JavaScript project</p>
+            </li>
+        </ul>
+        <h1>Course Lessons</h1>
+        <ul>
+            <li>
+                <p><a href="lesson01/" id="g_u01"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson02/" id="g_u02"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson03/" id="g_u03"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson04/" id="g_u04"></a></p>
+            </li>
+            <li>
+                <p><a href="lesson05/" id="g_u05"></a></p>
+            </li>
         </ul>
     </article>
 </body>

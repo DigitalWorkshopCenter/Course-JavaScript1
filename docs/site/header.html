@@ -4,28 +4,21 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <style>
-   /* Title Bar */
-   #courseTitle {
-      background: #326BA9 !important;
+   :root {
+      --color1: #ffffff;
+      --color2: #FEFEFE;
+      --color3: #F59D00;
+      --color4: #ffff55;
+      --color5: #ffdb55;
+      --color6: #db9255;
+      --color7: #65B1F4;
+      --color8: #425268;
+      --color9: #1E445D;
+      --colorBlack: #040404;
    }
-
-   #courseTitle h1 {
-      color: #FFFFFF;
-      font-size: 30px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 20px;
+   nav {
+      
    }
-
-   #courseTitle .logo {
-      position: fixed;
-   }
-
-   #courseTitle .courseName {
-      padding-left: 75px;
-      position: fixed;
-   }
-
    @media (max-width: 555px) {
       .noMobile {
          display: none !important;
@@ -85,12 +78,19 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-sm navbar-dark bg-primary flex-nowrap" style="background-color: #6d4955 !important">
+   <nav class="navbar navbar-expand-sm navbar-dark bg-primary flex-nowrap" style="background-color: #1E445D !important">
       <a href="/"><img
             src="https://nathanbirch.github.io/Course-IntroToJavaScript/site/logo.png" alt="" class="logo"></a>
       <a href="https://nathanbirch.github.io/Course-IntroToJavaScript/"><span class="navbar-brand w-100"
-            style="padding-left: 20px;">JavaScript
-            <span class="noMobile"> | Level I</span></span></a>
+            style="padding-left: 20px; 
+                   background: -webkit-linear-gradient(left, #ffff55, #F59D00, #ffff55);
+                   background: -o-linear-gradient(right, #ffff55, #F59D00, #ffff55);
+                   background: -moz-linear-gradient(right, #ffff55, #F59D00, #ffff55);
+                   background: linear-gradient(to right, #ffff55, #F59D00, #ffff55); 
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;">
+                   JavaScript<span class="noMobile"> | Level I</span></span>
+      </a>
 
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbar5">
          <ul class="navbar-nav mx-auto">
@@ -100,29 +100,17 @@
                   Lessons
                </a>
                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="https://byui-cse.github.io/cse341-course/lesson01">Lesson 1</a>
-                  <a class="dropdown-item" href="https://byui-cse.github.io/cse341-course/lesson02">Lesson 2</a>
-                  <a class="dropdown-item" href="https://byui-cse.github.io/cse341-course/lesson03">Lesson 3</a>
-                  <a class="dropdown-item" href="https://byui-cse.github.io/cse341-course/lesson04">Lesson 4</a>
-                  <a class="dropdown-item" href="https://byui-cse.github.io/cse341-course/lesson05">Lesson 5</a>
+                  <a class="dropdown-item" href="https://nathanbirch.github.io/Course-IntroToJavaScript/lesson01">Lesson 1</a>
+                  <a class="dropdown-item" href="https://nathanbirch.github.io/Course-IntroToJavaScript/lesson02">Lesson 2</a>
+                  <a class="dropdown-item" href="https://nathanbirch.github.io/Course-IntroToJavaScript/lesson03">Lesson 3</a>
+                  <a class="dropdown-item" href="https://nathanbirch.github.io/Course-IntroToJavaScript/lesson04">Lesson 4</a>
+                  <a class="dropdown-item" href="https://nathanbirch.github.io/Course-IntroToJavaScript/lesson05">Lesson 5</a>
                </div>
             </li>
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Projects
-               </a>
-               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item"
-                     href="https://byui-cse.github.io/cse341-course/projectStuff/prj1-requirements.html">Project 1</a>
-                  <a class="dropdown-item" href="https://byui-cse.github.io/cse341-course/projectStuff/prj2">Project
-                     2</a>
-               </div>
-            </li>
+            
          </ul>
       </div>
       <div class="w-100">
-         <!--spacer-->
       </div>
       <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar5">
          <span class="navbar-toggler-icon"></span>

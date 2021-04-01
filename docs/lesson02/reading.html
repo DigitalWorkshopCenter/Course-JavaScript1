@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.u02;
+            document.getElementById('g_u02').innerHTML = g.u02;
+            document.getElementById('g_reading').innerHTML = g.reading;
+        };
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1 id="g_u02"></h1>
+        <h2 id="g_reading"></h2>
+        <p>This lesson is focused on different types of data that exist in JavaScript, how datatypes can be used to assist in programming, and how to write code that can run repeatedly until a certain condition is met.</p>
+        <h3>Control Flow</h3>
+        <h3>Data Structures</h3>
+        <h3>Native Variable Types</h3>
+        <h3>Looping/Repetition</h3>
+        <h3>Functions</h3>
+</article>
+</body>
+
+</html>

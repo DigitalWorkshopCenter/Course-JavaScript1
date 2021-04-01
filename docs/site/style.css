@@ -12,14 +12,15 @@
 
 :root {
 	--color1: #ffffff;
-	--color2: #db9255;
-	--color3: #dbb655;
+	--color2: #FEFEFE;
+	--color3: #F59D00;
 	--color4: #ffff55;
 	--color5: #ffdb55;
-	--color6: #b66d55;
-	--color7: #ffffaa;
-	--color8: #b6b6aa;
-	--color9: #6d4955;
+	--color6: #db9255;
+	--color7: #65B1F4;
+	--color8: #425268;
+	--color9: #1E445D;
+	--colorBlack: #040404;
 }
 #foo h1 {
 	color: var(--color1);
@@ -48,8 +49,8 @@
 
 body {
 	font-family: "Open Sans", helvetica, arial, sans-serif;
-	background: #FEFEFE;
-	color: #040404;
+	background: var(--color1);
+	color: var(--colorBlack);
 	counter-reset: h3;
 }
 
@@ -91,7 +92,7 @@ pre code {
 	font-size: 14px;
 	line-height: 1.4em;
 	margin: 20px auto;
-	border: 1px solid #CCC;
+	border: 1px solid var(--color2);
 }
 
 pre code.hljs {
@@ -119,7 +120,7 @@ img.screenshot-large {
 	font-size: 18px;
 	font-family: Menlo, Monaco, Consolas, monospace;
 	background: var(--color1);
-	border: 1px solid #CCC;
+	border: 1px solid var(--color2);
 	padding: 2px 6px;
 }
 */
@@ -174,9 +175,21 @@ strong {
 }
 
 h1 {
+	color: var(--color3);
 	text-align: center;
 	font-size: 36px;
 	margin-bottom: 1em;
+	background: /* gradient can be an image */
+		linear-gradient(
+		to left, 
+		var(--color4) 0%,
+		var(--color3) 50%,
+		var(--color4) 100%
+		)
+		left 
+		bottom
+		no-repeat; 
+ 	 background-size:100% 2px ;
 }
 
 h2 {
@@ -184,11 +197,11 @@ h2 {
 	font-weight: bold;
 	margin: 40px 0 10px 0;
 	padding-bottom: 0.25em;
-	border-bottom: 1px solid #040404;
+	/* border-bottom: 1px solid var(--colorBlack); */
 }
 
 h3 {
-	color: #006AB9;
+	color: var(--color7);
 	text-transform: uppercase;
 	padding-top: 10px;
 	margin-bottom: 1em;
@@ -196,6 +209,7 @@ h3 {
 }
 
 h4 {
+	color: var(--color3);
 	padding-top: 10px;
 	margin-bottom: 0.5em;
 	font-weight: bold;
@@ -239,7 +253,7 @@ ol li {
 	font-size: 18px;
 	color: var(--color9);
 	margin-bottom: 1em;
-	border-left: 2px solid #CCC;
+	border-left: 2px solid var(--color3);
 }
 
 h3:before {
@@ -249,12 +263,12 @@ h3:before {
 }
 
 a {
-	color: var(--color2) !important;
+	color: var(--color7) !important;
 }
 li p {
 	font-size: 18px;
 	margin-bottom: 0.5em;
-	color: #040404;
+	color: var(--colorBlack);
 	margin-left: 10px;
 }
 
@@ -269,7 +283,7 @@ ol ul li {
 
 ul li p:before {
 	content: "»";
-	color: var(--color9);;
+	color: var(--color3);
 	font-size: 24px;
 	margin-right: 0.5em;
 }
@@ -319,7 +333,7 @@ table.code-examples p {
 table.code-examples td {
 	font-size: 1em;
 	padding: 10px;
-	border: 1px solid rgb(200,200,200);
+	border: 1px solid var(--color8);
 }
 
 .table-small {
@@ -332,7 +346,7 @@ table.code-examples td {
 }
 
 .table-small td {
-	border: 1px solid rgb(200,200,200);
+	border: 1px solid var(--color8);
 	padding: 3px;
 }
 
@@ -362,17 +376,17 @@ text-align: center;
 }
 
 .class-diagram-spacer{
-background: #EFEFEF;
+background: var(--color2);
 padding: 0;
 }
 
 .table-class-diagram tr.class-diagram-spacer td{
 padding: 0;
-border: 1px solid #EFEFEF;
+border: 1px solid var(--color8);
 }
 
 .table-class-diagram{
-border: 1px solid #CCC;
+border: 1px solid var(--color8);
 border-collapse: collapse;
 margin-left: 20px;
 margin-bottom: 10px;
@@ -384,7 +398,7 @@ font-family: Menlo, Monaco, Consolas, fixed;
 
 .table-class-diagram th{
 background: #3981B2;
-color: #EFEFEF;
+color: var(--color8);
 text-align: center;
 padding: 5px;
 padding-top: 5px!important;
@@ -393,11 +407,11 @@ padding-top: 5px!important;
 .table-class-diagram tr td{
 padding: 5px;
 padding-top: 5px!important;
-border-right: 1px dashed #CCC;
+border-right: 1px dashed var(--color8);
 }
 
 .table-class-diagram tr{
-border-bottom: 1px solid #EEE;
+border-bottom: 1px solid var(--color8);
 }
 
 .table-class-diagram tr:last-child, .table-class-diagram tr:first-child{
@@ -414,7 +428,7 @@ border-bottom: none;
 /* Instructor Tips */
 
 .tips {
-  background-color: rgb(230, 230, 230);
+  background-color: var(--color2);
   margin-left: 20px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -542,10 +556,10 @@ li heading {
  div.caption {
      position: relative;
      text-align: center;
-     color: lightgray;
+     color: var(--color8);
  }
  div.caption a, div.caption a:hover {
-     color: lightgray;;
+     color: var(--color8);
  }
  div.caption > span {
      position: absolute;

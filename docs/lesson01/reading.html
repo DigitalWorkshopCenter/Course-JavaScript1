@@ -13,11 +13,9 @@
             $("#includedHeader").load("../site/header.html");
         });
         window.onload = function () { // load global variables
-            document.title = g.n01;
+            document.title = g.u01;
             document.getElementById('g_u01').innerHTML = g.u01;
             document.getElementById('g_reading').innerHTML = g.reading;
-            document.getElementById('g_classTime').innerHTML = g.classTime;
-            document.getElementById('g_assignment').innerHTML = g.assignment;
         };
     </script>
 </head>
@@ -26,22 +24,15 @@
     <div id="includedHeader"></div>
     <article>
         <h1 id="g_u01"></h1>
-        <h2>Summary </h2>
-        <p>The topics for this lesson are as follows: </p>
-        <ul>
-            <li><p>Values / Types / Operators</p></li>
-            <li><p>Execution Environments</p></li>
-            <li><p>Variables</p></li>
-            <li><p>Expressions and Statements</p></li>
-            <li><p>Syntax</p></li>
-            <li><p>Control Flow</p></li>
-        </ul>
-        <h2>Tasks</h2>
-        <ul>
-            <li><p><a href="reading.html" id="g_reading"></a></p></li>
-            <li><p><a href="teach.html" id="g_classTime"> </a></p></li>
-            <li><p><a href="prove.html" id="g_assignment"> </a></p></li>
-        </ul>
+        <h2 id="g_reading"></h2>
+        <p>This lesson is focused on getting comfortable with what JavaScript is and what can be done with it. </p>
+        <h3>What is JavaScript?</h3>
+        <h3>Values / Types / Operators</h3>
+        <h3>Execution Environments</h3>
+        <h3>Variables</h3>
+        <h3>Expressions and Statements</h3>
+        <h3>Syntax</h3>
+        <h3>Control Flow</h3>
     </article>
 </body>
 
