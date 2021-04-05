@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.n01 + " - Hands-on 1";
+
+            const demo = document.querySelector("#javaScriptFunctionExample");
+            demo.addEventListener('click', updateName);
+            function updateName() {
+                let name = prompt("Please enter a name");
+                alert("Hello there, " + name + "! I'm excited to learn JavaScript with you!!");
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Hands-on Exercise 1<br>Writing and Running JavaScript Programs</h1>
+        <h2>Overview</h2>
+        <p>The focus of this assignment is to dive right in to writing JavaScript. Here are our goals for today:</p>
+        <ol>
+            <li><p>Set up our computers so we can write and run our code.</p></li>
+            <li><p>Write JavaScript code</p></li>
+            <li><p>Run it on our computer</p></li>
+            <li><p>Write more advanced JavaScript code</p></li>
+            <li><p>Run it in the browser</p></li>
+        </ol>
+        <!-- <p>The following video covers this entire exercise (video duration)</p>
+        <video class="img-tutorial" width:100%; controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <h2>Computer Setup</h2>
+        <h3>VS Code</h3>
+        <p>To set up our computers to write JavaScript, all we need to do is download a text editor. We will be using <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> also known as VS Code.</p>
+        <ol>
+            <li><p>Open <a target="_blank" href="https://code.visualstudio.com/download">this webpage</a> in your browser.</p></li>
+            <li><p>Download VS Code for your operating system.</p></li>
+            <li><p>Install VS Code.</p></li>
+            <li><p>Accept all the default settings.</p></li>
+        </ol>
+        <p>Now that it is installed. Open VS Code. We are going to download an extension for it that will allow us to run/execute JavaScript here in VS Code. Click on the Extensions Icon and search <code>code runner</code>, then click install.</p>
+        <img src="images/class1_5.png" class="img-tutorial" alt="">
+
+        <p>Additionally, you may also watch the following media content that includes helpful tips and tricks to help you work efficiently with this program. </p>
+        <ul>
+            <li><p><a href="https://www.youtube.com/watch?v=VqCgcpAypFQ" target="_blank">Visual Studio Code Tutorial for Beginners - Introduction (By Academind)</a></p></li>
+        </ul>
+        <p>You can return to your files in VS code by clicking on the file explorer icon:</p>
+        <img src="images/class1_11.png" class="img-tutorial" alt="">
+
+        <h3>Google Chrome</h3>
+        <p>You will not need Chrome to write JavaScript code, but we will need it to run the code. Just like if I have a movie file like avengers.mp4, I won't open it with Zoom...I will open it with a Media Player.</p>
+        <p>You could technically use any browser to run the code, however, we will be using some tools built into Chrome to help us with our code.</p>
+        <ol>
+            <li><p>Open <a href="https://www.google.com/chrome/browser/" target="_blank">this webpage</a> in your browser. </p></li>
+            <li><p>Download Chrome</p></li>
+            <li><p>Install it</p></li>
+        </ol>
+        <h3>File Organization</h3>
+        <p>This part of the tutorial does not require you to install anything, but you are encouraged to store all of your code in one place on your computer. This is important because eventually, your code will be used in what's called a <a href="https://www.thebalancecareers.com/what-is-a-professional-portfolio-1987043" target="_blank">professional portfolio</a> to help you get a job. </p>
+        <p>Create a folder on your computer for this class called <code>JavaScript1</code>.</p>
+        <h2>Hello World!</h2>
+        <p>"Hello, World!" is a time-honored program that outputs or displays the message "Hello, World!". It is used to illustrate the basic syntax of a programming language and because it is very simple, it is often the first program written by people learning to code. Our first program today will be our "Hello, World!" program.</p>
+        <p>Now, let's write some code!!</p>
+        <ol>
+            <li>
+                <p>Open VS Code. You should see something similar to this:</p>
+                <br>
+                <img src="images/class1_1.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>Click "Open folder" (emphasized above) and select the folder your made for our class.</p>
+                <br>
+                <img src="images/class1_2.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>Create a new file called <code>hello.js</code></p>
+                <br>
+                <img src="images/class1_3.png" class="img-tutorial" alt="">
+                <br>
+                <p>You should see something like this:</p>
+                <br>
+                <img src="images/class1_4.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>Now, in the right-hand pane, where we see the <code>1</code> representing the first line of code, write the following:</p>
+                <pre><code class="js hljs">console.log("Hello, World!")</code></pre>
+            </li>
+            <li>
+                <p>Save the file (You can click "file" then "save file" or press the keys ctrl+s.</p>
+            </li>
+            <li>
+                <p>Finally, click the "Run" button icon to execute the program.</p>
+                <br>
+                <img src="images/class1_6.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>Notice the output window below that appeared. Your program displayed the text "Hello, World!" to the output console. Congratulations on writing and running your first JavaScript program!</p>
+                <br>
+                <img src="images/class1_7.png" class="img-tutorial" alt="">
+            </li>
+        </ol>
+        <p>Nice work writing your first program! Now, let's try something similar in the browser. Remember in the <a href="reading.html#exampleSection" target="_blank">Lesson 1 Reading</a> that JavaScript from html? We will do the same thing. </p>
+        <ol>
+            <li><p>Create a- file the same way you did before called <code>hello.html</code></p></li>
+            <li>
+                <p>In the new file, type <code>!</code> and then press <code>tab</code> on your keyboard. This will complete the Emmet Abbreviation suggestion that shows up after you type <code>!</code>. Alternatively, <code>enter</code> will autocomplete it as well.</p>
+                <br>
+                <img src="images/class1_8.png" class="img-tutorial" alt="">
+                <br>
+                <p>hello.html should now look like this: </p>
+                <br>
+                <img src="images/class1_9.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>Remember, we can run html files in the browser (Google Chrome). To do this, all we have to do is put the file path into the url bar of Chrome. However, we are going to download an extension to help us with this instead. Click the extensions icon and search <code>Live Server</code>. Install it.</p>
+                <br>
+                <img src="images/class1_10.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>Now that we've installed it, save the hello.html file. Right click in the editor while the file is open and click <code>Open with Live Server</code>.</p>
+                <br>
+                <img src="images/class1_12.png" class="img-tutorial" alt="">
+                <p>You should see your browser open with your empty html file loaded. I can see the file name in the url bar. And I can see the text "Document" in the tab at the top that matches the <code>title</code> html tag currently on line 7 in hello.html.</p>
+                <br>
+                <img src="images/class1_13.png" class="img-tutorial" alt="">
+                <p>If a different browser opened, we want to change your VS Code settings to open these files in Google Chrome. Please view <a href="https://stackoverflow.com/questions/49289233/how-to-change-default-browser-with-vs-codes-open-with-live-server/51580183" target="_blank">How to change default browser with VS Code's “open with live server”?</a>. The following screenshot was taken from there.</p>
+                <img src="images/class1_14.png" class="img-tutorial" alt="">
+            </li>
+            <li><p>If you'd like, you may take a moment to experiment with this html. Add the following code to line 10: <img src="images/class1_15.png"> and save the file. Live Server will detect this change, and update your code in the browser, rendering your new code. If it does not reload the file, refresh the page in the browser.</p></li>
+            <li>
+                <p>The last thing we have to do, is get JavaScript to run in here. We already have a JavaScript file. Let's add it to our html file. </p>
+                <br>
+                <img src="images/class1_16.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>If we look at hello.js, we are currently outputting to the console. This is not what we want to do in the browser. Instead, let's put <code>alert</code> in. This will not be able to run in the console anymore, but it will run beautifully in the browser. Make the change, save the file, and refresh the page in the browser.</p>
+                <br>
+                <img src="images/class1_17.png" class="img-tutorial" alt="">
+                <br>
+                <img src="images/class1_18.png" class="img-tutorial" alt="">
+            </li>
+        </ol>
+        <h2>Conclusion</h2>
+        <p>In this exercise, you set up all of the software you will need for web development in general. You have written a JavaScript program. You have executed it both in a console and in the browser through an html file. It is common practice to use html and JavaScript together the way that we did today. Congratulations!!</p>
+        <h4><a href="class1_1.zip" target="_blank">Completed Code Zip File</a></h4>
+    </article>
+</body>
+
+</html>

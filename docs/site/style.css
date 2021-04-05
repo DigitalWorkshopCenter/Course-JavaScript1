@@ -12,9 +12,10 @@
 
 :root {
 	--color1: #ffffff;
-	--color2: #FEFEFE;
+	--color2: #cccccc;
 	--color3: #F59D00;
 	--color4: #ffff55;
+	--color10: #ffffa3;
 	--color5: #ffdb55;
 	--color6: #db9255;
 	--color7: #65B1F4;
@@ -54,6 +55,26 @@ body {
 	counter-reset: h3;
 }
 
+.classActivity {
+	width:100%;
+	height:100px;
+	vertical-align: middle;
+	text-align: center;
+	border: 10px solid;
+	border-image-source: linear-gradient(20deg, var(--color4), var(--color7), var(--color4));
+	border-image-slice: 1;
+	border-radius:10px;
+}
+.classActivity h5 {
+	line-height: 80px;
+}
+.warning {
+	padding:20px;
+	text-align: center;
+	color: #CC0000;
+	font-size: large;
+	font-weight: bolder;
+}
 /* Title Bar */
 #courseTitle {
 	background: #326BA9;
@@ -86,18 +107,6 @@ body {
 	width: 100%;
 }
 
-/* Code Highlighting */
-pre code {
-	font-family: Menlo, Monaco, Consolas, monospace;
-	font-size: 14px;
-	line-height: 1.4em;
-	margin: 20px auto;
-	border: 1px solid var(--color2);
-}
-
-pre code.hljs {
-	padding-bottom: 25px;
-}
 
 code .user-input {
 	text-decoration: underline;
@@ -115,15 +124,6 @@ img.screenshot-large {
     margin: 0 auto 0.5em auto;
 }
 
-/*p code, li code {
-	color: #A10200;
-	font-size: 18px;
-	font-family: Menlo, Monaco, Consolas, monospace;
-	background: var(--color1);
-	border: 1px solid var(--color2);
-	padding: 2px 6px;
-}
-*/
 
 p code, li code {
 	font-size: 18px;
@@ -336,6 +336,21 @@ table.code-examples td {
 	border: 1px solid var(--color8);
 }
 
+.cite {
+	font-size: x-small;
+}
+
+#ToC{
+	font-family: Arial, Helvetica, sans-serif;
+	color:Black;
+	background-color: silver;
+	border-radius: 10px;
+	width: 40%;
+	border: 1px solid Black;
+	padding: 10px;
+	margin: 10px;
+	float:right;
+}
 .table-small {
 	font-size:small;
 	margin-bottom: 20px;
@@ -428,7 +443,7 @@ border-bottom: none;
 /* Instructor Tips */
 
 .tips {
-  background-color: var(--color2);
+  background-color: var(--color10);
   margin-left: 20px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -502,7 +517,28 @@ li heading {
  .time:before {
 	content: "("
  }
+.supMatBord {
+	border: 1px solid var(--color7);
+	border-radius: 10px;
+}
 
+.supMaterials {
+	 width: 100%;
+}
+.supMaterials td {
+	padding: 10px;
+	vertical-align: top;
+}
+.reallyBig {
+	font-size: 200%;
+}
+.supImg {
+	object-fit: cover;
+	border-radius: 10px;
+	width:200px;
+	height:200px;
+	border: 3px solid var(--color5);
+}
  /* styles for 341 prove rubrics */
  table.rubric th,
  table.rubric td {

@@ -27,9 +27,9 @@ g.assignment = "Programming Assignment";
 
 // course topics
 g.t1_0 = "What is JavaScript?";
-g.t1_1 = "Values / Types / Operators";
-g.t1_2 = "Execution Environments";
-g.t1_3 = "Variables";
+g.t1_1 = "Execution Environments";
+g.t1_2 = "Variables & Values";
+g.t1_3 = "Types & Operators";
 g.t1_4 = "Expressions and Statements";
 g.t1_5 = "Syntax";
 g.t1_6 = "Control Flow";
