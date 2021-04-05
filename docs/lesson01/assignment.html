@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Assignment #1</h1>
+        <h2>Overview</h2>
+        <p>Today, you will complete your first assignment for this course. You will have an opportunity to demonstrate your understanding of the concepts taught in this module, and surely you will learn a lot as you develop a program of your own. These assignments are designed to be both fun and educational, as well as give you an opportunity to stretch youself and develop your skills.</p>
+        <p>Your tasks are as follows:</p>
+        <h3>Create the file and run it in the browser:</h3>
+        <ul>
+            <li><p>Create a new html file in your text editor</p></li>
+            <li><p>Use the <code>!</code> shortcut shown in the reading material to generate an html template for you to use.</p></li>
+            <li><p>Add a <code>script</code> tag to the <code><head></code> of the head of your html document. This will look very similar to the hello world activity done previously. </p></li>
+            <li><p>Create a js file and add the filename to the <code>script</code> tag listed above.</p></li>
+            <li><p>Save the file, and run it in the browser. Ensure that you can make it this far.</p></li>
+        </ul>
+        <h3>Create a friendly JavaScript program</h3>
+        <ul>
+            <li><p>Prompt the user for their name.  In the class activity, you used the <code>alert</code> function to show a popup in the browser. Now, you will use the <code>prompt()</code> function. The <a href="https://www.w3schools.com/jsref/met_win_prompt.asp" target="_blank"> w3schools page</a> on prompt() may be helpful as you do this.</p></li>
+            <li><p>Save the user's name in a variable called <code>username</code></p></li>
+            <li><p>Using <code>alert()</code>, send a message to this user that includes both their name and something that you have found to be meaningful in your life. </p></li>
+        </ul>
+        <h4>Stretch Challenges</h4>
+        <p>If you had fun working on this assignment and want to do more, here are some suggestions...</p>
+        <ul>
+            <li><p>Have multiple <code>prompt()</code>s and save multiple variables. Change your message to include all of them. </p></li>
+            <li><p>You learned how to do arithmetic in the reading this week, try to add some math into your program. You may want to look into <code><a href="https://www.w3schools.com/jsref/jsref_parsefloat.asp" target="_blank">parseFloat()</a></code>.</p></li>
+            <li><p>Add something to your html file.</p></li>
+        </ul>
+        <h3>Save/push changes to Github</h3>
+        <p>Now that you have finished your program, it is time to save it in Github. We do this so that potential employers can see your work. It is good to be in the habit of saving your code in Github even in the very beginning. Anytime you write a program or work on a project, you will want to do what we are about to do now.</p>
+        <ul>
+            <li><p>Open the terminal in VS code by right clicking the <code>JavaScript1</code> folder and selecting "Open in Integrated Terminal".</p></li>
+            <li><p>execute the following commands:</p></li>
+            <li><p><code>git status</code> - This will show what changes have been made in your repository.</p></li>
+            <li><p><code>git add .</code> - This will prepare all of your changes for a commit (which will be saved in version control if you ever need to view or return to the state that your code is currently in).</p></li>
+            <li><p><code>git commit -m "Lesson 1 assignment"</code> - This will save the changes that you just added with the name that you put for the message, in this case: "Lesson 1 Assignment".</p></li>
+            <li><p><code>git push</code> - This will save your code in Github. Now you could go to the github.com website and view your code their as well along with your commit.</p></li>
+            <li><p>Send your instructor the link to your github repository (ie: https://github.com/yourUserName/JavaScript1)</p></li>
+        </ul>
+    </article>
+</body>
+
+</html>
