@@ -27,12 +27,22 @@
       --colorBlack: #040404; */
    }
 
-   /* @media (max-width: 555px) {
+   @media (max-width: 560px) {
       .noMobile {
          display: none !important;
       }
-   } */
+   }
+   @media (max-width: 760px) {
+      .noSmallTablet {
+         display: none !important;
+      }
+   }
 
+   @media (max-width: 1100px) {
+      .notablet {
+         display: none !important;
+      }
+   }
    a {
       color: #02a6fb !important;
    }
@@ -47,14 +57,6 @@
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent; 
       -moz-text-fill-color: transparent;
-
-
-      /* background: -webkit-linear-gradient(left, #94c63f, #02a6fb);
-      background: -o-linear-gradient(right, #94c63f, #02a6fb);
-      background: -moz-linear-gradient(right, #94c63f, #02a6fb);
-      background: linear-gradient(to right, #94c63f, #02a6fb); 
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; */
       font-weight: bold;
       font-size:125%;
    }
@@ -78,10 +80,10 @@
       </a>
    -->
    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-color: #023544 !important;">
-      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 noSmallTablet">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                 <a href="/"><img src="https://nathanbirch.github.io/Course-JavaScript1/site/logo.png" alt="" class="logo" style="height:55px"></a>
+                 <a href="https://digitalworkshopcenter.com/" target="_blank"><img src="https://nathanbirch.github.io/Course-JavaScript1/site/logo.png" alt="" class="logo" style="height:55px"></a>
               </li>
           </ul>
       </div>
@@ -94,19 +96,19 @@
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbar-toggleable-md">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson01">Lesson 1</a>
+                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson01"><span class="notablet">Lesson</span> 1</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson02">Lesson 2</a>
+                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson02"><span class="notablet">Lesson</span> 2</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson03">Lesson 3</a>
+                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson03"><span class="notablet">Lesson</span> 3</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson04">Lesson 4</a>
+                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson04"><span class="notablet">Lesson</span> 4</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson05">Lesson 5</a>
+                  <a class="nav-link" href="https://nathanbirch.github.io/Course-JavaScript1/lesson05"><span class="notablet">Lesson</span> 5</a>
               </li>
           </ul>
       </div>

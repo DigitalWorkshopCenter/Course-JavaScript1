@@ -549,6 +549,11 @@ li heading {
 }
 .reallyBig {
 	font-size: 200%;
+	color: var(--color7);
+}
+.reallyKindaBig {
+	font-size: 160%;
+	color: var(--color3);
 }
 .supImg {
 	object-fit: cover;
