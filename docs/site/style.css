@@ -193,7 +193,7 @@ strong {
 }
 
 h1 {
-	color: var(--color3);
+	color: var(--color3) !important;
 	text-align: center;
 	font-size: 36px;
 	margin-bottom: 1em;
@@ -219,7 +219,7 @@ h2 {
 }
 
 h3 {
-	color: var(--color7);
+	color: var(--color7) !important;
 	text-transform: uppercase;
 	padding-top: 10px;
 	margin-bottom: 1em;
