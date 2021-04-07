@@ -11,17 +11,28 @@
 }
 
 :root {
-	--color1: #ffffff;
-	--color2: #cccccc;
-	--color3: #F59D00;
-	--color4: #ffff55;
-	--color10: #ffffa3;
-	--color5: #ffdb55;
-	--color6: #db9255;
-	--color7: #65B1F4;
-	--color8: #425268;
-	--color9: #1E445D;
-	--colorBlack: #040404;
+      /*  DWC Color scheme*/
+      --color1: #ffffff;
+      --color2: #FEFEFE;
+      --color3: #94c63f;
+      --color4: #c1d65f;
+      --color5: #6e6f71;
+      --color6: #add36c;
+      --color7: #02a6fb;
+      --color8: #014c73;
+      --color9: #023544;
+	  --colorBlack: #040404;
+      /* Birch Learning Colors
+      --color1: #ffffff;
+      --color2: #FEFEFE;
+      --color3: #F59D00;
+      --color4: #ffff55;
+      --color5: #ffdb55;
+      --color6: #db9255;
+      --color7: #65B1F4;
+      --color8: #425268;
+      --color9: #1E445D;
+      --colorBlack: #040404; */
 }
 #foo h1 {
 	color: var(--color1);
@@ -46,6 +57,10 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.frontAndCenterImage {
+	width:100%;
 }
 
 body {
