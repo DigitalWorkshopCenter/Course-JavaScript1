@@ -17,8 +17,8 @@ g.n05 = 'Lesson ' + '05';
 g.u01 = g.n01 + ' - Introduction to JavaScript';
 g.u02 = g.n02 + ' - Data Structures';
 g.u03 = g.n03 + ' - Document Object Model';
-g.u04 = g.n04 + ' - Web Application Part I';
-g.u05 = g.n05 + ' - Web Application Part II';
+g.u04 = g.n04 + ' - Simple Web Application';
+g.u05 = g.n05 + ' - Advanced Web Application';
 
 // assignment information
 g.reading = "Reading Materials";
@@ -44,3 +44,5 @@ g.t3_1 = "The DOM (Document Object Model)";
 g.t3_2 = "Events";
 g.t3_3 = "Forms - Elements and Validation";
 
+// projects
+g.pAlarmClock = "Alarm Clock";
