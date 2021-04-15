@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        hljs.highlightAll();
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.n03 + " - Hands-on 3";
+        };
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Hands-on Exercise 3<br>Using Forms</h1>
+        <h2>Overview</h2>
+        <p>The focus of this activity is to learn how to manipulate the DOM, use forms and trigger an event. Here are our goals for today:</p>
+        <ol>
+            <li><p>Create an html file and a JavaScript file.</p></li>
+            <li><p>Create a form in the html file with several input boxes for the user</p></li>
+            <li><p>When the user clicks the submit button, trigger an event to call a function in your js file.</p></li>
+            <li><p>This function will then add data to a list on the page for the user to see.</p></li>
+        </ol>
+        <p>The following video demonstrates how to do the steps in this section:</p>
+        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/Txvug0Yi0vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4><a href="class3_3.zip" target="_blank">Completed Code Zip File</a></h4>
+    </article>
+</body>
+
+</html>

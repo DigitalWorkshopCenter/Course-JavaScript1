@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        hljs.highlightAll();
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.n03 + " Assignment";
+        };
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Lesson Assignment</h1>
+        <h2>Overview</h2>
+        <p>The assignment for this lesson is intended to strengthen your ability to work with the DOM, events and forms. Your tasks are as follows:</p>
+        <ol>
+            <li><p>Create a fun web page of your choosing</p></li>
+            <li><p>Include a form with an input box for the user to put the url of an image on the web</p></li>
+            <li><p>When they submit the form (by pressing the button) it will call a function</p></li>
+            <li><p>This function will then create an <code>img</code> element an put it on the page with the new image.</p></li>
+        </ol>
+        <img src="images/assignment3.gif" class="img-tutorial" alt="">
+        <h3>Stretch Challenges</h3>
+        <ul>
+            <li><p>Add form validation to ensure that the user put a url into the input box</p></li>
+        </ul>
+        <h3>Save/push changes to Github</h3>
+        <p>Now that you have finished your program, it is time to save it in Github. We do this so that potential employers can see your work. It is good to be in the habit of saving your code in Github even in the very beginning. Anytime you write a program or work on a project, you will want to do what we are about to do now.</p>
+        <ul>
+            <li><p>Open the terminal in VS code by right clicking the <code>JavaScript1</code> folder and selecting "Open in Integrated Terminal".</p></li>
+            <li><p>execute the following commands:</p></li>
+            <li><p><code>git status</code> - This will show what changes have been made in your repository.</p></li>
+            <li><p><code>git add .</code> - This will prepare all of your changes for a commit (which will be saved in version control if you ever need to view or return to the state that your code is currently in).</p></li>
+            <li><p><code>git commit -m "Lesson 3 assignment"</code> - This will save the changes that you just added with the name that you put for the message, in this case: "Lesson 3 Assignment".</p></li>
+            <li><p><code>git push</code> - This will save your code in Github. Now you could go to the github.com website and view your code their as well along with your commit.</p></li>
+            <li><p>Navigate to <a href="github.com" target="_blank">github.com</a> and verify that your repository shows your latest code.</p></li>
+        </ul>
+        <h3>Submit Assignment</h3>
+        <ul>
+            <li><p>Fill out <a href="https://forms.gle/riSgkSnhwLwbJfBP9" target="_blank">This Form</a> to submit your assignment. You will need your github repository url (ie: https://github.com/yourUserName/JavaScript1) to complete this form.</p></li>
+        </ul>
+
+    </article>
+</body>
+
+</html>
