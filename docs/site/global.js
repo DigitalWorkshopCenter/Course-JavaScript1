@@ -36,7 +36,7 @@ g.t1_6 = "Control Flow";
 
 g.t2_1 = "Control Flow";
 g.t2_2 = "Data Structures";
-g.t2_3 = "Native Variable Types";
+g.t2_3 = "Variable Types";
 g.t2_4 = "Looping/Repetition";
 g.t2_5 = "Functions";
 

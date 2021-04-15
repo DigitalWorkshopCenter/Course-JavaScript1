@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        hljs.highlightAll();
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.n02 + " - Hands-on 1";
+        };
+        function showAnswer(qNumber) {
+            let answers = [
+                "let address = '321 W Main St.'; \n\ndatatype: STRING",
+                "let userAge = 43;\n\ndatatype: NUMBER",
+                "let students = ['Sally', 'George', 'Samantha', 'Fred'];\n\ndatatype: ARRAY",
+                "let car = {\n    make: 'Toyota', \n    model: 'Tundra', \n    color: 'Red', \n    year: 2021\n};\n\ndatatype: OBJECT",
+                "function alertTime() { \n    let currentDate = new Date(); \n    alert(currentDate.getTime()); \n}\n\ndatatype: FUNCTION",
+                "answer: The typeof operator is used to get the data type (returns a string) of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object. The operator returns the data type.",
+                "answer: number \n\nThere are a handful of data types in JavaScript (number, string, boolean, object, and undefined). Notice that there is only a single data type for numbers, not separate data types for integers and floating point numbers like some other languages.",
+                "answer: true \n\n3 is a 'number' and 4.32 is a 'number' as well, so the equality comparison of the types returns true. JavaScript has the same data type for integer and floating point numbers.",
+                "answer: undefined \n\nWhen a keyword is declared, but not assigned to any value, its value is undefined."
+
+            ]
+            alert(answers[qNumber]);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Hands-on Exercise 1<br>Exploring JavaScript Data Structures</h1>
+        <h2>Overview</h2>
+        <p>The focus of this assignment is to get comfortable declaring variables of various types and knowing when to use what type. Here are our goals for today:</p>
+        <ol>
+            <li><p>Declare variables of each data type</p></li>
+            <li><p>Display this data in the terminal in VS Code.</p></li>
+            <li><p>Display this data in the browser console.</p></li>
+            <li><p>Gain practice thinking about what data type is best for certain situations.</p></li>
+        </ol>
+        <h2>Declaring Variables</h2>
+        <ol>
+            <li>
+                <p>Create a js file. Each on its own line of code, declare new variables of the following data types by assigning a value to it of that type.</p>
+                <ul>
+                    <li><p>string</p></li>
+                    <li><p>number</p></li>
+                    <li><p>object</p></li>
+                    <li><p>array</p></li>
+                    <li><p>function</p></li>
+                </ul>
+            </li>
+            <li>
+                <p>Log each of these to the console.</p>
+            </li>
+            <li>
+                <p>Use the <code>Run</code> button like we did in the previous lesson to see the output in the terminal in VS Code.</p>
+            </li>
+            <li>
+                <p>Having written code to declare and log these variables, now write code to display them in the console of the browser. HINT (you will need to create an html file, link the js file to it, and open it with <code>Live Server</code>).</p>
+            </li>
+        </ol>
+        <p>The following video demonstrates how to do the steps in this section:</p>
+        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/RXPqDkjYml0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4><a href="class2_1.zip" target="_blank">Completed Code Zip File</a></h4>
+        <h2>Variable Quiz</h2>
+        <p>Programmers frequently need to solve difficult problems. Having the understanding to know when to use certain data structures will benefit you as a programmer practically every day that you work. Answer the following questions to the best of your ability regarding JavaScript data structures: </p>
+        <ol>
+            <li>
+                <p>How would I store my mailing address in a variable? What datatype would it be?</p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(0)">Show answer</button>
+            </li>
+            <li>
+                <p>How would I store my age in a varieble? What datatype would it be?</p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(1)">Show answer</button>
+            </li>
+            <li>
+                <p>How would I store a list with all the names of the students in this class? What datatype would it be?</p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(2)">Show answer</button>
+            </li>
+            <li>
+                <p>How could I store the make, model, color and year of a car? What datatype would it be?</p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(3)">Show answer</button>
+            </li>
+            <li>
+                <p>How could I store a way to display the current time to the user? What datatype would it be?</p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(4)">Show answer</button>
+            </li>
+            <li>
+                <p>What does the typeof operator do in JavaScript?</p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(5)">Show answer</button>
+            </li>
+            <li>
+                <p>What does the following expression return?<pre><code class="js">
+    typeof(3);
+                </code></pre></p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(6)">Show answer</button>
+            </li>
+            <li>
+                <p>What does the following expression return?<pre><code class="js">
+    typeof(3) === typeof(4.32);
+                </code></pre></p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(7)">Show answer</button>
+            </li>
+            <li>
+                <p>What is the value of the hello variable in the following expression?<pre><code class="js">
+    let hello;
+                </code></pre></p>
+                <button class="btn btn-primary mgLeft" onclick="showAnswer(8)">Show answer</button>
+            </li>
+        </ol>
+        <p>The following video goes through each quiz question and expounds on these answers with further examples.</p>
+        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/NQadkQl2NxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </article>
+</body>
+
+</html>

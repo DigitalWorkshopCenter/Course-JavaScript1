@@ -7,9 +7,12 @@
     <link rel="shortcut icon" href="../site/fav.png" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
+        hljs.highlightAll();
         $(function () {
             $("#includedHeader").load("../site/header.html");
         });
@@ -31,13 +34,269 @@
     <article>
         <h1 id="g_u02"></h1>
         <h2 id="g_reading"></h2>
-        <p>This lesson is focused on different types of data that exist in JavaScript, how datatypes can be used to assist in programming, and how to write code that can run repeatedly until a certain condition is met.</p>
+        <p>This lesson is focused on different types of data that exist in JavaScript, how datatypes can be used to
+            assist in programming, and how to write code that can run repeatedly until a certain condition is met.</p>
         <h3 id='g_t2_1'></h3>
+        <p>To start off this lesson, review the video from the previous lesson that shows several different aspects of
+            control flow and several different control structures.</p>
+        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/KmK21Hy3lG4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         <h3 id='g_t2_2'></h3>
+        <p>From <a href="https://www.educative.io/blog/javascript-data-structures#what-are">Educative</a> we read that
+            Data structures, at a high level, are techniques for storing and organizing data that make it easier to
+            modify, navigate, and access. Data structures determine how data is collected, the functions we can use to
+            access it, and the relationships between data.</p>
+        <p>Data structures are used in almost all areas of computer science and programming, from operating systems to
+            basic vanilla code to artificial intelligence.</p>
+        <p>Data structures are vital for efficient, real-world problem solving. After all, the way we organize data has
+            a lot of impact on performance and useability. In fact, most top companies require a strong understanding of
+            data structures.</p>
         <h3 id='g_t2_3'></h3>
+        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">JavaScript Website</a>
+            lists all of the different types of data and data structures that exist in JavaScript:</p>
+        <h4>Primitive</h4>
+        <p>We can see the type of each variable in JavaScript with the typeof function.</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/undefined">
+                    <p>undefined
+                </a>&nbsp;:&nbsp;typeof
+                instance === "undefined"</p>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">
+                    <p>Boolean
+                </a>&nbsp;:
+                typeof instance === "boolean"</p>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">
+                    <p>Number
+                </a>&nbsp;:
+                typeof instance === "number"</p>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">
+                    <p>String
+                </a>&nbsp;:
+                typeof instance === "string"</p>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/BigInt">
+                    <p>BigInt
+                </a>&nbsp;:
+                typeof instance === "bigint"</p>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">
+                    <p>Symbol
+                </a>&nbsp;:
+                typeof instance === "symbol"</p>
+            </li>
+        </ul>
+        <h4>Structural</h4>
+        <ul>
+            <li>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Object">Object</a>&nbsp;:
+                    typeof instance === "object". Special non-data but
+                    Structural type for any <a
+                        href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects#the_constructor">constructed</a>
+                    object instance also used as data structures: new <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>,
+                    new <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>,
+                    new <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a>,
+                    new <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>,
+                    new&nbsp;<a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap</a>,
+                    new <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet</a>,&nbsp;new
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>&nbsp;and
+                    almost everything made with <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new">new
+                        keyword</a>;
+                </p>
+            </li>
+            <li>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Function">Function</a>&nbsp;: a
+                    non-data structure, though it also answers for typeof operator:
+                    typeof instance === "function". This is merely a special shorthand
+                    for Functions, though every Function constructor is derived from Object constructor.
+                </p>
+            </li>
+        </ul>
+        <h4>Data Structure Summary and Examples</h4>
+        <p>Now that you know all of the data types/structures that exist in JavaScript, here is an example of how you
+            can create a variable of each:
+        </p>
+        <p><code>string</code></p>
+        <p>Is used to store any type of text in a variable.</p>
+        <pre><code class="js">&nbsp;let name = "Nathan";</code></pre>
+        <p><code>number</code></p>
+        <p>Is used to store any type of number in a variable.</p>
+        <pre><code class="js">&nbsp;let age = 58;</code></pre>
+        <p><code>object</code></p>
+        <p>Can store many pieces of data...as if it were storing a bunch of different variables. These can be of various
+            types (number, string, function, array, etc).</p>
+        <pre><code class="js">&nbsp;let person = {name: "Nathan", age: 58};</code></pre>
+        <p><code>array</code></p>
+        <p>Is a collection of data stored without variable names. We can access these pieces of data by their location
+            in the array. Arrays can also store any type of data (numbers, strings, objects, arrays, etc.).</p>
+        <pre><code class="js">&nbsp;let ages = [20, 28, 58, 60, 4];</code></pre>
+        <p><code>function</code></p>
+        <p>A piece of data that performs some type of action. As seen in the Control Flow video, it changes the default
+            control flow, and can be called and executed at any time.</p>
+        <pre><code class="js">function calculateArea(width, height) {
+    return width * height;
+}
+        </code></pre>
+        <a href="class1.html">
+            <div class="classActivity">
+                <h5>Hands-on exercise - Exploring Data Structures</h5>
+            </div>
+        </a>
         <h3 id='g_t2_4'></h3>
+        <p>The different data structures we've learned about today have endless applications in their use. Repetition in programming also has endless application but also allows us to use all of these data structures to their full extent. Put simply, repition allows a program to run the same code multiple times....even infinite times, although that isn't particularly ideal. Repetition in programming is implemented by what we call loops. JavaScript supports the following different types of loop:</p>
+        <ul>
+            <li>
+                <p><code>while</code> — loops through a block of code as long as the condition specified evaluates to
+                    true.</p>
+            </li>
+            <li>
+                <p><code>do…while</code> — loops through a block of code once; then the condition is evaluated. If the
+                    condition is
+                    true, the statement is repeated as long as the specified condition is true.</p>
+            </li>
+            <li>
+                <p><code>for</code> — loops through a block of code until the counter reaches a specified number.</p>
+            </li>
+            <li>
+                <p><code>for…in</code> — loops through the properties of an object.</p>
+            </li>
+            <li>
+                <p><code>for…of</code> — loops over iterable objects such as arrays, strings, etc.</p>
+            </li>
+        </ul>
+        <p>The following examples are from <a
+                href="https://www.tutorialrepublic.com/javascript-tutorial/javascript-loops.php">TutorialRepublic</a>
+        </p>
+        <h4>while</h4>
+        <p>This is the simplest looping statement provided by JavaScript.  The while loop loops through a block of code as long as the specified condition evaluates to true. As soon as the condition fails, the loop is stopped. The generic syntax of the while loop is:</p>
+        <pre><code class="js">
+    while(condition) {
+        // Code to be executed
+    }</code></pre>
+    <p>The following example defines a loop that will continue to run as long as the variable i is less than or equal to 5. The variable i will increase by 1 each time the loop runs:</p>
+    <pre><code class="js">
+    var i = 1;
+    while(i <= 5) {    
+        console.log("The number is " + i + "");
+        i++;
+    }
+    </code></pre>
+        <h4>do…while</h4>
+        <p>The do-while loop is a variant of the while loop, which evaluates the condition at the end of each loop iteration. With a do-while loop the block of code executed once, and then the condition is evaluated, if the condition is true, the statement is repeated as long as the specified condition evaluated to is true. The generic syntax of the do-while loop is:</p>
+        <pre><code class="js">
+    do {
+        // Code to be executed
+    }
+    while(condition);
+        
+        </code></pre>
+        <p>The JavaScript code in the following example defines a loop that starts with i=1. It will then print the output and increase the value of variable i by 1. After that the condition is evaluated, and the loop will continue to run as long as the variable i is less than, or equal to 5.</p>
+        <pre><code class="js">
+    var i = 1;
+    do {
+        console.log("The number is " + i + ".");
+        i++;
+    }
+    while(i <= 5);
+        </code></pre>
+        <h5>Difference Between while and do...while Loop</h5>
+        <p>The while loop differs from the do-while loop in one important way — with a while loop, the condition to be evaluated is tested at the beginning of each loop iteration, so if the conditional expression evaluates to false, the loop will never be executed. With a do-while loop, on the other hand, the loop will always be executed once even if the conditional expression evaluates to false, because unlike the while loop, the condition is evaluated at the end of the loop iteration rather than the beginning.</p>
+        <h4>for</h4>
+        <p>The for loop repeats a block of code as long as a certain condition is met. It is typically used to execute a block of code for certain number of times. Its syntax is:</p>
+        <pre><code class="js">
+    for(initialization; condition; increment) {
+        // Code to be executed
+    }
+        </code></pre>
+        <p>The parameters of the for loop statement have following meanings:</p>
+        <ul>
+            <li><p><code>initialization</code> — it is used to initialize the counter variables, and evaluated once unconditionally before the first execution of the body of the loop.</p></li>
+            <li><p><code>condition</code> — it is evaluated at the beginning of each iteration. If it evaluates to true, the loop statements execute. If it evaluates to false, the execution of the loop ends.</p></li>
+            <li><p><code>increment</code> — it updates the loop counter with a new value each time the loop runs.</p></li>
+        </ul>
+        <p>The following example defines a loop that starts with i=1. The loop will continued until the value of variable i is less than or equal to 5. The variable i will increase by 1 each time the loop runs:</p>
+        <pre><code class="js">
+    for(var i=1; i<=5; i++) {
+        console.log("The number is " + i + ".");
+    }
+        </code></pre>
+        <h4>for…in</h4>
+        <p>The for-in loop is a special type of a loop that iterates over the properties of an object, or the elements of an array. The generic syntax of the for-in loop is:</p>
+        <pre><code class="js">
+    for(variable in object) {
+        // Code to be executed
+    }
+        </code></pre>
+        <p>The loop counter i.e. variable in the for-in loop is a string, not a number. It contains the name of current property or the index of the current array element. The following example will show you how to loop through all properties of a JavaScript object.</p>
+        <pre><code class="js">
+    // An object with some properties 
+    var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+    
+    // Loop through all the properties in the object  
+    for(var prop in person) {  
+        console.log(prop + " = " + person[prop]); 
+    }
+        </code></pre>
+        <p>You can also loop through the elements of an array in the same way.</p>
+        <h4>for…of</h4>
+        <p>ES6 introduces a new for-of loop which allows us to iterate over arrays or other iterable objects (e.g. strings) very easily. Also, the code inside the loop is executed for each element of the iterable object.</p>
+        <p>The following example will show you how to loop through arrays and strings using this loop.</p>
+        <pre><code class="js">
+    // Iterating over array
+    let letters = ["a", "b", "c", "d", "e", "f"];
+
+    for(let letter of letters) {
+        console.log(letter); // a,b,c,d,e,f
+    }
+
+    // Iterating over string
+    let greet = "Hello World!";
+
+    for(let character of greet) {
+        console.log(character); // H,e,l,l,o, ,W,o,r,l,d,!
+    }
+        </code></pre>
+        <a href="class2.html">
+            <div class="classActivity">
+                <h5>Hands-on exercise - Practice with Loops</h5>
+            </div>
+        </a>
         <h3 id='g_t2_5'></h3>
-</article>
+        <p>The <a href="https://www.w3schools.com/js/js_functions.asp">w3schools</a> website has a great lesson on JavaScript functions. We've talked briefly about functions before including how they change control flow, but today we will look at them in more depth. A lot of what we see will be derived from the w3schools site.</p>
+        <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+        <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+        <pre><code class="js">
+    function myFunction('p1,p2) {
+        return p1 * p2;   // The function returns the product of p1 and p2
+    }
+        </code></pre>
+    <h4>JavaScript Function Syntax</h4>
+    <p>A JavaScript function is defined with the <code>function</code> keyword, followed by a <code>name</code>, followed by parentheses <code>()</code>.</p>
+
+    <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+    
+    <p>The parentheses may include parameter names separated by commas: <code>(parameter1, parameter2, ...)</code></p>
+    
+    <p>The code to be executed, by the function, is placed inside curly brackets: {}</p>
+
+    <a href="class3.html">
+        <div class="classActivity">
+            <h5>Hands-on exercise - Programming with Functions </h5>
+        </div>
+    </a>
+    </article>
 </body>
 
 </html>
