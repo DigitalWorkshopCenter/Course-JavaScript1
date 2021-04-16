@@ -44,5 +44,3 @@ g.t3_1 = "The DOM (Document Object Model)";
 g.t3_2 = "Events";
 g.t3_3 = "Forms - Elements and Validation";
 
-// projects
-g.pAlarmClock = "Alarm Clock";
