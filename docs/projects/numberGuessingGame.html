@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+    </script>
+    <title>Number Guessing Game Project Requirements</title>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Number Guessing Game Project</h1>
+        <h2>Summary </h2>
+        <p>We all have heard of the game that goes something like this, "Guess a number between 1 and 100." Well, in this project, you will re-create this game in JavaScript.</p>
+        <h3>Project Requirements</h3>
+        <p>The application is required to have a home.html page with a js and css file for it. To ensure that it is ready to add more functionality, you should design the application file structure in such a way that you are able to add more pages with ease. The application: </p>
+        <ul>
+            <li><p>Has a professional look and feel</p></li>
+            <li><p>Includes an html form with the following fields:
+                <ul>
+                    <li><p>Low number for range (guess a number between 1 and 100, this input will allow the user to pick the bottom number of this range for the game)</p></li>
+                    <li><p>High number for range</p></li>
+                </ul>
+            <li><p>A button to submit the form
+                <img src="images/numberGuessGame1.png" class="img-tutorial" alt="">
+            </p></li>
+
+            <li><p>Implements the following functions: 
+                <ul>
+                    <li><p><code>submitData()</code>. This function will retrieve the form data, and check for validation errors (they need to submit valid numbers AND the low number has to be less than the high number). If there is an error, display the error by calling the updateDOM function and stop the remaining code execution. If there is no error, call the numberGuessGame function.</p></li>
+                    <li><p><code>updateDOM(value)</code>. This function will display the error message if there is a validation error. And later it will also display "CONGRATULATIONS!!! __ is correct!". The value parameter will either be the error message string, or the congratulations message. The color you can use to make the error red, or the congrats message a special color.</p></li>
+                    <li><p><code>numberGuessGame(userGuess)</code>. This function will include the loop and the logic to drive the game. Use a do while loop with a condition similar to while(userGuess != actualNumber). Inside the loop, use prompt() to prompt the user for their next guess, and display their progress letting them know if they need to guess higher or lower in the prompts. </p></li>
+                    <li><p><code>randomNumber(min, max)</code>. This function will take the numbers the user put in for the range of the game. It will use Math.random and Math.floor to produce a whole,random number within that range. <a href="https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/" target="_blank"> This reference</a> may be helpful.</p></li>
+                </ul>
+        </ul>
+        <h2>Stretch Challenges</h2>
+        <ul>
+            <li><p>Keep track of how many guesses have been made, and share that number with the user when they guess the right number</p></li>
+            <li><p>Show a list of previous guesses</p></li>
+        </ul>
+        <p>Here is a video demonstration of a sample application that meets these requirements.</p>
+        <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/FWqSABY2QrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+</body>
+
+</html>
