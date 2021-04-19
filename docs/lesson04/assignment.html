@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        hljs.highlightAll();
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.n04 + " Project Submission";
+        };
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Simple Web Application Project Submission</h1>
+        <h2>Overview</h2>
+        <p>The assignment/project for this lesson is detailed on the <a href="index.html" target="_blank">lesson 4 home page</a>. Once you have completed your project, you will push it to your github repository, then submit the Google Form included below.</p>
+        <p></p>
+        <h3>Save/push changes to Github</h3>
+        <p>Now that you have finished your program, it is time to save it in Github. We do this so that potential employers can see your work. It is good to be in the habit of saving your code in Github even in the very beginning. Anytime you write a program or work on a project, you will want to do what we are about to do now.</p>
+        <ul>
+            <li><p>Open the terminal in VS code by right clicking the <code>JavaScript1</code> folder and selecting "Open in Integrated Terminal".</p></li>
+            <li><p>execute the following commands:</p></li>
+            <li><p><code>git status</code> - This will show what changes have been made in your repository.</p></li>
+            <li><p><code>git add .</code> - This will prepare all of your changes for a commit (which will be saved in version control if you ever need to view or return to the state that your code is currently in).</p></li>
+            <li><p><code>git commit -m "Lesson 4 Project"</code> - This will save the changes that you just added with the name that you put for the message, in this case: "Lesson 4 Project".</p></li>
+            <li><p><code>git push</code> - This will save your code in Github. Now you could go to the github.com website and view your code their as well along with your commit.</p></li>
+            <li><p>Navigate to <a href="github.com" target="_blank">github.com</a> and verify that your repository shows your latest code.</p></li>
+        </ul>
+        <h3>Submit Assignment</h3>
+        <ul>
+            <li><p>Fill out <a href="https://forms.gle/tiFY3FZcSHtBpzpH8" target="_blank">This Form</a> to submit your project. You will need your github repository url (ie: https://github.com/yourUserName/JavaScript1) to complete this form.</p></li>
+        </ul>
+
+    </article>
+</body>
+
+</html>
