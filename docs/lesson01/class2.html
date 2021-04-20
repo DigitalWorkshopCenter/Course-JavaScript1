@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../site/fav.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        hljs.highlightAll();
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.title = g.n01 + " - Hands-on 2";
+        };
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Hands-on Exercise 2<br>Circle Area</h1>
+        <h2>Overview</h2>
+        <p>The following is an example of how to compute the area of a circle. As we go through the program, we will add to it, adding functionality and making it more user-friendly.</p>
+        <h2>Circle Area Program</h2>
+        <h3>First draft - nice and simple</h3>
+        <p>A very simple program to compute the area of a circle and display the area to console looks like this: </p>
+        <pre><code class="js">
+    let radius = 5;                                 // declare radius variable 
+    let circleArea = Math.PI * radius * radius;     // compute circle area
+    console.log("The area is " + circleArea + "."); // display data in console    
+        </code></pre>
+        <p>To run this, we save it as <code>circleArea.js</code> and we can run it in VS Code with the Code Runner "Run Code" button we used in the last exercise. Now, we want to add a couple of things to this. First, we want to be able to run in this in the browser, which means we need an html file.</p>
+        <h3>Adding an html file - Run it in the browser</h3>
+        <p>Now, let's create a file called circleArea.html.</p>
+        <pre><code class="html" style="background-color: black;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Circle Area&lt;/title&gt;
+    &lt;style&gt;
+        h1 {
+            color: blue;
+        }
+    &lt;/style&gt;
+    &lt;script src="circleArea.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a large heading!&lt;/h1&gt;
+    &lt;p&gt;Right click the page and click INSPECT to see the console where the JavaScript output will be.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        <p>The most important line of code above is this one:
+            <pre><code class="html" style="background-color: black;">
+    &lt;script src="circleArea.js"&gt;&lt;/script&gt;
+            </code></pre>
+        </p>
+        <p>This is what connects the html file to the JavaScript file with our code. Now, in VS Code, open circleArea.html and right click in the editor for it and select <code>Open with Live Server</code>. This will open the browser window and show you the code being rendered. If you right click on the page in Google Chrome and select <code>Inspect</code> you will see the developer tools open on the side of the page. In the console, you should see this:</p>
+        <img src="images/class2_1.png" class="img-tutorial" alt="">
+        <h3>Getting rid of the console</h3>
+        <p>We are off to a great start, but we can do several things to make this application more user friendly. First, let's display the message in an alert popup box instead of in the console...because most of our users won't have the developer tools open. :)</p>
+        <p>To do this, all we have to do is change the <code>console.log</code> code to <code>alert</code> as shown below:</p>
+        <pre><code class="js">
+    let radius = 5;                              // declare radius variable 
+    let circleArea = Math.PI * radius * radius;  // compute circle area
+    alert("The area is " + circleArea + ".");    // display data in popup
+        </code></pre>
+        <h3>Let the user choose the radius value</h3>
+        <p>The code above is definitely an improvement, but to make this application useful, the user should be able to choose the value of the radius, so that they can see the circle area of any circle they want. We can achieve this by using <code>prompt</code> to prompt the user for input.</p>
+        <pre><code class="js">
+    let radius = prompt("Enter a radius");       // declare radius variable 
+    let circleArea = Math.PI * radius * radius;  // compute circle area
+    alert("The area is " + circleArea + ".");    // display data in popup
+        </code></pre>
+        <p>The <code>prompt()</code> function shown above will display a popup box with an input, allowing the user to type in something - in this case, a radius. Then that radius will be assigned to the variable named <code>radius</code>.</p>
+        <h3>Adding Units</h3>
+        <p>Now that the user can use their own values, let's make it look a little better. We will add units to this so that the user can see what units are being used.</p>
+        <p>First, we'll declare a variable as a string with a unit type. Then we'll use that both to display the prompt to the user, and the circle area.</p>
+        <pre><code class="js">
+    let unit = "inches";
+    let radius = prompt("Enter a radius in " + unit);
+    let circleArea = Math.PI * radius * radius;
+    alert("The area in " + unit + " is " + circleArea + ".");
+        </code></pre>
+        <h3>Rounding</h3>
+        <p>Looking at this, some of the circle area values have a very large number of decimal places. Let's round it so it looks a little nicer.</p>
+        <pre><code class="js">
+    let unit = "inches";
+    let radius = prompt("Enter a radius in " + unit);
+    let circleArea = Math.PI * radius * radius;
+    circleArea = circleArea.toFixed(); // or circleArea.round()
+    alert("The area in " + unit + " is " + circleArea + ".");
+        </code></pre>
+        <p>Both <code>toFixed()</code> and <code>round()</code> can round our number to a whole number. <code>toFixed()</code>, however can also round a number to any number of decimal places by using it like this: </p>
+        <pre><code class="js">
+    circleArea = circleArea.toFixed(2); // round to 2 decimal places
+        </code></pre>
+        <h3>Adding an option to round or not</h3>
+        <p>Perhaps the user does not want to round. Perhaps their circumstances are such that they need more accuracy in the circle area output, while other users may prefer whole numbers. Because of this, we should provide the user a way to choose whether they want the output to be rounded or not. We can ask them using a simple prompt, just like we did for the radius, as shown below: </p>
+        <pre><code class="js">
+    let userRoundPreference = prompt("Would you like to round? (y/n)");
+        </code></pre>
+        <p>Then, we can use a simple <code>if</code> statement to round it if they said yes. </p>
+        <pre><code class="js">
+    let unit = "inches";
+    let radius = prompt("Enter a radius in " + unit);
+    let circleArea = Math.PI * radius * radius;
+
+    let userRoundPreference = prompt("Would you like to round? (y/n)");
+
+    if (userRoundPreference === "y") {
+        circleArea = circleArea.toFixed();
+    }
+
+    alert("The area in " + unit + " is " + circleArea + ".");
+        </code></pre>
+        <p>The last thing we may want to do here is allow the user to put in a lowercase y or an uppercase y. We can do this by adding an OR statement using <code>||</code> as follows:</p>
+        <pre><code class="js">
+    if (userRoundPreference === "y" || userRoundPreference === "Y") {
+        circleArea = circleArea.toFixed();
+    }
+        </code></pre>
+        <h2>Conclusion</h2>
+        <h3>Extras</h3>
+        <p>We've added a lot to our little application, but there is still more we could do following the same pattern. For example, we could provide another prompt, asking the user for what type of units they want to use so that it isn't always inches. Or we could ask them how many decimal places they want to round to. Feel free to experiment with these things and try to add them to your application.</p>
+        <p>Feel free to download the completed code (from everything shown above except for the extras) below.</p>
+        <h4><a href="class1_2.zip" target="_blank">Completed Code Zip File</a></h4>
+    </article>
+</body>
+
+</html>
