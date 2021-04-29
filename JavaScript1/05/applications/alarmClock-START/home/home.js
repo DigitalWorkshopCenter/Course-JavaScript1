@@ -39,6 +39,7 @@ function listenForAlarms() {
 }
 
 function checkForAlarm() {
+    // use the debugger to get a good feel for everything going on here.
     var d = new Date();
     var h = d.getHours();
     var m = d.getMinutes();
@@ -85,6 +86,6 @@ function createAlarm() {
 
     // TODO 
     // make sure newAlarm.title is unique
-    // if it is not, display anerror for the user
+    // if it is not, display an error for the user
     // if it is unique, add it to alarmList and display that in the html
 }
