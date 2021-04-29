@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../site/fav.png" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
+        hljs.highlightAll();
         $(function () {
             $("#includedHeader").load("../site/header.html");
         });
@@ -40,7 +44,22 @@
                 <ul>
                     <li><p><code>submitData()</code>. This function will retrieve the form data, and check for validation errors (they need to submit valid numbers AND the low number has to be less than the high number). If there is an error, display the error by calling the updateDOM function and stop the remaining code execution. If there is no error, call the numberGuessGame and pass in min and max as parameters.</p></li>
                     <li><p><code>updateDOM(value, color)</code>. This function will display the error message if there is a validation error. And later it will also display "CONGRATULATIONS!!! __ is correct!". The value parameter will either be the error message string, or the congratulations message. The color you can use to make the error red, or the congrats message a special color.</p></li>
-                    <li><p><code>numberGuessGame(min, max)</code>. This function will include the loop and the logic to drive the game. Use a do while loop with a condition similar to while(userGuess != actualNumber). Inside the loop, use prompt() to prompt the user for their next guess, and display their progress letting them know if they need to guess higher or lower in the prompts. </p></li>
+                    <li><p><code>numberGuessGame(min, max)</code>. This function will include the loop and the logic to drive the game. Use a do while loop with a condition similar to while(userGuess != actualNumber). Inside the loop, use prompt() to prompt the user for their next guess, and display their progress letting them know if they need to guess higher or lower in the prompts. This function will take a fair bit of thought. Perhaps this code structure may be helpful as you write this code: <br>
+                    <pre><code class="js">
+    function numberGuessGame(min, max) {
+        let num = randomNumber(min, max)
+        // declare message variable with something like , "I'm thinking of a number between 'min' and 'max', try to guess it"
+        let guess; // declare guess as empty variable so you can modify it from the loop
+        do {
+            guess = parseInt(prompt(message))
+            // if too low modify message to say that their guess is too low
+            // if too high, modify message to say that they guess is too high
+        } while(..guess is wrong..)
+        // modify message to say congratulations!!!
+        updateDOM(message, "green");
+    }
+                    </code></pre>
+                    </p></li>
                     <li><p><code>randomNumber(min, max)</code>. This function will take the numbers the user put in for the range of the game. It will use Math.random and Math.floor to produce a whole,random number within that range. <a href="https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/" target="_blank"> This reference</a> may be helpful.</p></li>
                 </ul>
         </ul>
