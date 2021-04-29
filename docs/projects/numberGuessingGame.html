@@ -35,6 +35,14 @@
                 <ul>
                     <li><p>Low number for range (guess a number between 1 and 100, this input will allow the user to pick the bottom number of this range for the game)</p></li>
                     <li><p>High number for range</p></li>
+                    <li><p>The form will look something like this: <br>
+                    <pre><code class="html">
+&lt;form name="guessForm" onsubmit="submitData(); return false"&gt;
+    &lt;input type="text" name="min"&gt;
+    &lt;input type="text" name="max"&gt;
+    &lt;button type="submit"&gt;Play Game!&lt;/button&gt;
+&lt;/form&gt;
+                    </code></pre>
                 </ul>
             <li><p>A button to submit the form
                 <img src="images/numberGuessGame1.png" class="img-tutorial" alt="">
@@ -59,8 +67,31 @@
         updateDOM(message, "green");
     }
                     </code></pre>
-                    </p></li>
                     <li><p><code>randomNumber(min, max)</code>. This function will take the numbers the user put in for the range of the game. It will use Math.random and Math.floor to produce a whole,random number within that range. <a href="https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/" target="_blank"> This reference</a> may be helpful.</p></li>
+                    <li><p>The entire structure of your js file will look something like this: <br>
+                    <pre><code class="js">
+    function submitData() {
+        // retrieve form data -- min and max
+
+        //if error
+            updateDOM("ERROR", "red");
+        // else
+            numberGuessGame(min, max)
+    }
+
+    function updateDOM(value, color) {
+        // document.getElementById("output").innerHTML = value; // make sure you have a div in html file with id of output.
+        // update color of div as well
+    }
+
+    function numberGuessGame(min, max) {
+        // see logic and code above
+    }
+
+    function randomNumber(min, max) { 
+        return Math.random() * (max - min) + min;
+    } 
+                    </code></pre></p></li>
                 </ul>
         </ul>
         <h2>Stretch Challenges</h2>
