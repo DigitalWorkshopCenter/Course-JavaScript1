@@ -16,18 +16,19 @@ function submitData() {
     numberGuessGame(low, high);
   }
 }
-x = 5 + 4 / 2;
+// x = 5 + 4 / 2;
 function numberGuessGame(low, high) {
-  let message =
-    "I'm thinking of a number between " +
-    low +
-    ' and ' +
-    high +
-    '.\nTry to guess it!\nPlease enter an integer between ' +
-    low +
-    ' and ' +
-    high +
-    '.';
+  // let message =
+  //   "I'm thinking of a number between " +
+  //   low +
+  //   ' and ' +
+  //   high +
+  //   '.\nTry to guess it!\nPlease enter an integer between ' +
+  //   low +
+  //   ' and ' +
+  //   high +
+  //   '.';
+  let message = `I'm thinking of a number between ${low} and ${high}.\nTry to guess it`;
   let answer = randomNumber(low, high);
   let guessCount = 0;
   let guess;
