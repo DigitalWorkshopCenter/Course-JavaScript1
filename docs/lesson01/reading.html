@@ -28,7 +28,7 @@
             document.getElementById('g_t1_5').innerHTML = g.t1_5;
             document.getElementById('g_t1_6').innerHTML = g.t1_6;
             document.getElementById('g_reading').innerHTML = g.reading;
-            
+
             const demo = document.querySelector("#javaScriptFunctionExample");
             demo.addEventListener('click', updateName);
             function updateName() {
@@ -46,15 +46,21 @@
     <article>
         <h1 id="g_u01"></h1>
         <h2 id="g_reading"></h2>
-        <p>This lesson is focused on getting comfortable with what JavaScript is and what can be done with it. </p>
+        <p>This lesson is focused on getting comfortable with JavaScript.</p>
         <h3 id='g_t1_0'></h3>
         <h6>The majority of this section comes directly from the <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">Mozilla website</a>.</h6>
         <h4>A High-level Definition</h4>
         <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.</p>
         <ul>
-            <li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank">HTML</a> is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.</p></li>
-            <li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank">CSS</a> is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.</p></li>
-            <li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank">JavaScript</a> is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p></li>
+            <li>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank">HTML</a> is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.</p>
+            </li>
+            <li>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS" target="_blank">CSS</a> is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.</p>
+            </li>
+            <li>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank">JavaScript</a> is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+            </li>
         </ul>
         <h4 id="exampleSection">A Simple Example of the Three Working Together</h4>
         <p>The three layers build on top of one another nicely. Let's take a simple text label as an example. We can mark it up using HTML to give it structure and purpose:</p>
@@ -64,13 +70,21 @@
         <p>And finally, we can add some JavaScript to implement dynamic behavior:</p>
         <img src="images/read3.png" id="javaScriptFunctionExample" alt="">
         <p>Try clicking on this last version of the text label to see what happens.</p>
-        
+
         <h4>So what can it really do?</h4>
         <ul>
-            <li><p>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called <code>name</code>.</p></li>
-            <li><p>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the <code>name</code> variable to create the complete text label, e.g. ''Player 1: Chris".</p></li>
-            <li><p>Running code in response to certain events occurring on a web page. We used a <code><a href="/en-US/docs/Web/API/Element/click_event" title="/en-US/docs/Web/Events/click">click</a></code> event in our example above to detect when the button is clicked and then run the code that updates the text label.</p></li>
-            <li><p>And much more!</p></li>
+            <li>
+                <p>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called <code>name</code>.</p>
+            </li>
+            <li>
+                <p>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the <code>name</code> variable to create the complete text label, e.g. ''Player 1: Chris".</p>
+            </li>
+            <li>
+                <p>Running code in response to certain events occurring on a web page. We used a <code><a href="/en-US/docs/Web/API/Element/click_event" title="/en-US/docs/Web/Events/click">click</a></code> event in our example above to detect when the button is clicked and then run the code that updates the text label.</p>
+            </li>
+            <li>
+                <p>And much more!</p>
+            </li>
         </ul>
         <p>Throughout this course, you will learn not only what JavaScript is capable of doing, but you will also learn how to write your own JavaScript programs, and then make your own dynamic web applications. Your learning will take place through reading yes, but mostly through practice. As you engage in writing code, working through errors, and trying new things, you will learn at an extremely rapid rate. </p>
 
@@ -114,8 +128,12 @@
         </div>
         <p>You'll notice in the table above, that if I want to actually run a JavaScript file, I have a couple of options. The two most prominent ways to run JavaScript code are as follows: </p>
         <ul>
-            <li><p>In the browser in a web application.</p></li>
-            <li><p>On your computer in the terminal or in a program that can read and render JavaScript code.</p></li>
+            <li>
+                <p>In the browser in a web application.</p>
+            </li>
+            <li>
+                <p>On your computer in the terminal or in a program that can read and render JavaScript code.</p>
+            </li>
         </ul>
         <p>In the first class activity this lesson, we will experiment a little bit with both.</p>
         <h4>Where do you write JavaScript code?</h4>
@@ -126,12 +144,12 @@
                 <h5>Hands-on exercise - Computer Setup, JavaScript Hello World!</h5>
             </div>
         </a>
-        <p class="warning">Do not continue until you've completed this exercise</p> 
+        <p class="warning">Do not continue until you've completed this exercise</p>
         <p>Moving forward for the rest of this lesson, you can try writing JavaScript code along with what you're reading and learning to get practice writing and running your code.</p>
         <h3 id='g_t1_2'></h3>
         <h4>What is a variable?</h4>
         <p>The term <code>variable</code> is one that you will hear many times each day in the programming world. <strong>A variable is a memory location that holds data and is accessed by a name.</strong> Variables can change and hold different values. In JavaScript, a variable can hold any datatype without declaring if it is going to be a string (text), a number or anything else. The following code shows two different ways of declaring a variable. Each will reserve a space in your computer's RAM. Each will be capable of holding data in that memory location, and we as programmers can access it by the name we give it when we declare it.</p>
-       
+
         <pre><code class="js">
     var name;              // var is keyword to declare a variable
     let anotherName;       // let will declare block-scoped variable (we'll use this most often)
@@ -174,7 +192,7 @@
         </pre>
         <h3 id='g_t1_3'></h3>
         <h4>JavaScript Types</h4>
-        <p>JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types <span class="cite">(From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">Mozilla</a>)</span></p> 
+        <p>JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types <span class="cite">(From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">Mozilla</a>)</span></p>
         <pre>
             <code class="js">
     let foo;     // foo is undefined
@@ -189,11 +207,21 @@
         </p>
         <p>JavaScript includes the following categories of operators:</p>
         <ul>
-            <li><p>Arithmetic Operators</p></li>
-            <li><p>Comparison Operators</p></li>
-            <li><p>Logical Operators</p></li>
-            <li><p>Assignment Operators</p></li>
-            <li><p>Conditional Operators</p></li>
+            <li>
+                <p>Arithmetic Operators</p>
+            </li>
+            <li>
+                <p>Comparison Operators</p>
+            </li>
+            <li>
+                <p>Logical Operators</p>
+            </li>
+            <li>
+                <p>Assignment Operators</p>
+            </li>
+            <li>
+                <p>Conditional Operators</p>
+            </li>
         </ul>
         <h5>Arithmetic Operators</h5>
         <table class="table">
@@ -297,7 +325,7 @@
             </tbody>
         </table>
         <p>The following example demonstrates how comparison operators perform different tasks.</p>
-        <pre>   
+        <pre>
             <code class="js">
     var a = 5, b = 10, c = "5";
     var x = a;
@@ -337,7 +365,7 @@
                 </tr>
             </tbody>
         </table>
-        <pre>   
+        <pre>
             <code class="js">
     var a = 5, b = 10;
     (a != b) && (a < b); // returns true
@@ -442,13 +470,19 @@
         <h4>Statements</h4>
         <p>A statement is an instruction to perform a specific action. Such actions include creating a variable or a function, looping through an array of elements, evaluating code based on a specific condition etc. JavaScript programs are actually a sequence of statements. Among others, statements in JavaScript can be categorized as follows:</p>
         <ul>
-            <li><p>Declaration Statements</p></li>
-            <li><p>Expression Statements</p></li>
-            <li><p>Conditional Statements</p></li>
+            <li>
+                <p>Declaration Statements</p>
+            </li>
+            <li>
+                <p>Expression Statements</p>
+            </li>
+            <li>
+                <p>Conditional Statements</p>
+            </li>
         </ul>
         <h5>Declaration Statements</h5>
         <p>Such type of statements create variables and functions by using the var and function statements respectively. Examples include</p>
-        <pre>  
+        <pre>
             <code class="js">
     let sum;
     let average;
@@ -505,11 +539,21 @@
         <h3 id='g_t1_6'></h3>
         <p>Control flow in programming is the order in which code gets executed. Most people, when reading books, have a specific control flow: Top to bottom, left to right, from the first page to the last. Sometimes that will change when someone wants to peak at the end of a chapter, or maybe they see something unique on the next page that catches their eye. In programming there are several things that can effect control flow or the flow of execution. They are as follows: </p>
         <ul>
-            <li><p>Sequence - Default: Top to bottom</p></li>
-            <li><p>Selection - If/Else Logic</p></li>
-            <li><p>Repetition - Repeat a group of statements</p></li>
-            <li><p>Function call and return - Execute statements in a function, then return to call point. </p></li>
-            <li><p>Try, Catch, Throw - Find and handle errors</p></li>
+            <li>
+                <p>Sequence - Default: Top to bottom</p>
+            </li>
+            <li>
+                <p>Selection - If/Else Logic</p>
+            </li>
+            <li>
+                <p>Repetition - Repeat a group of statements</p>
+            </li>
+            <li>
+                <p>Function call and return - Execute statements in a function, then return to call point. </p>
+            </li>
+            <li>
+                <p>Try, Catch, Throw - Find and handle errors</p>
+            </li>
         </ul>
         <p>The following video (5:26) goes through all of the control structures listed above.</p>
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/udxELupoT2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
