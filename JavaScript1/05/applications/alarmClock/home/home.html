@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="../site.js"></script>
     <script src="home.js"></script>
 </head>
+
 <body>
     <h1>Current time: <span id="time"></span></h1>
     <div id="alarmSounding" style="display: none;">
@@ -28,7 +30,7 @@
             <form name="alarmForm" onsubmit="return false">
                 Alarm title: <input type="text" name="alarmTitle">
                 <br>
-                Set alarm time 
+                Set alarm time
                 <select id="timeDropdown" name="alarmTime">
                 </select>
                 <br><br>
@@ -39,4 +41,5 @@
     <button id="soundAlarmHack" onclick="toggleAlarm()"></button>
     <audio id="alarm" src="../assets/archangelIntro.mp3" muted></audio>
 </body>
+
 </html>

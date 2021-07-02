@@ -28,26 +28,50 @@
             to ensure that it is ready to add more functionality, so you should design the application file structure
             planning to add more pages.</p>
         <ul>
-            <li><p>Has professional look and feel</p></li>
-            <li><p>Includes an html form with the following fields:
+            <li>
+                <p>Has professional look and feel</p>
+            </li>
+            <li>
+                <p>Includes an html form with the following fields:
                 <ul>
-                    <li><p>Balance of the account (amount of money at the beginning)</p></li>
-                    <li><p>The annual interest rate</p></li>
-                    <li><p>Duration of investment (in months)</p></li>
+                    <li>
+                        <p>Balance of the account (amount of money at the beginning)</p>
+                    </li>
+                    <li>
+                        <p>The annual interest rate</p>
+                    </li>
+                    <li>
+                        <p>Duration of investment (in months)</p>
+                    </li>
                 </ul>
-            <li><p>A button to submit the form</p></li>
-            <li><p>Implements the following functions: 
+            <li>
+                <p>A button to submit the form</p>
+            </li>
+            <li>
+                <p>Implements the following functions:
                 <ul>
-                    <li><p><code>submitData()</code>. This function will retrieve the form data, and check for validation errors (the three numbers need to be present and not less than 0). If there is an error, display the error by calling the updateDOM function and stop the remaining code execution. If there is no error, call the computeFutureValue function.</p></li>
-                    <li><p><code>updateDOM(value, color)</code>. This function will display the error message when there is a validation error, and it will also display the future value if all the code execution goes well. The value parameter will either be the error message string, or the future value number string. The color you can use to make the error red, or the future value green, etc.</p></li>
-                    <li><p><code>computeFutureValue(balance, annualRate, months)</code>. This function will include the loop and the logic to add each month's interest on to the balance to compute the future value. After the value has been computed, call updateDOM function. </p></li>
+                    <li>
+                        <p><code>submitData()</code>. This function will retrieve the form data, and check for validation errors (the three numbers need to be present and not less than 0). If there is an error, display the error by calling the updateDOM function and stop the remaining code execution. If there is no error, call the computeFutureValue function.</p>
+                    </li>
+                    <li>
+                        <p><code>updateDOM(value, color)</code>. This function will display the error message when there is a validation error, and it will also display the future value if all the code execution goes well. The value parameter will either be the error message string, or the future value number string. The color you can use to make the error red, or the future value green, etc.</p>
+                    </li>
+                    <li>
+                        <p><code>computeFutureValue(balance, annualRate, months)</code>. This function will include the loop and the logic to add each month's interest on to the balance to compute the future value. After the value has been computed, call updateDOM function. </p>
+                    </li>
                 </ul>
         </ul>
         <h2>Stretch Challenges</h2>
         <ul>
-            <li><p>Centering the labels and inputs of the form to make them look nice.</p></li>
-            <li><p>Find a professional image that reminds you of investments to use as the body background.</p></li>
-            <li><p>Add commas to the output value number if it is more than $999 (for example, $1,000.00 and $3,123,957.45)</p></li>
+            <li>
+                <p>Centering the labels and inputs of the form to make them look nice.</p>
+            </li>
+            <li>
+                <p>Find a professional image that reminds you of investments to use as the body background.</p>
+            </li>
+            <li>
+                <p>Add commas to the output value number if it is more than $999 (for example, $1,000.00 and $3,123,957.45)</p>
+            </li>
         </ul>
         <p>Here is a video demonstration of a sample application that meets these requirements.</p>
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/4DNlfem3FPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

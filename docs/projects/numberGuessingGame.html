@@ -30,13 +30,21 @@
         <h3>Project Requirements</h3>
         <p>The application is required to have a home.html page with a js and css file for it. To ensure that it is ready to add more functionality, you should design the application file structure in such a way that you are able to add more pages with ease. The application: </p>
         <ul>
-            <li><p>Has a professional look and feel</p></li>
-            <li><p>Includes an html form with the following fields:
+            <li>
+                <p>Has a professional look and feel</p>
+            </li>
+            <li>
+                <p>Includes an html form with the following fields:
                 <ul>
-                    <li><p>Low number for range (guess a number between 1 and 100, this input will allow the user to pick the bottom number of this range for the game)</p></li>
-                    <li><p>High number for range</p></li>
-                    <li><p>The form will look something like this: <br>
-                    <pre><code class="html">
+                    <li>
+                        <p>Low number for range (guess a number between 1 and 100, this input will allow the user to pick the bottom number of this range for the game)</p>
+                    </li>
+                    <li>
+                        <p>High number for range</p>
+                    </li>
+                    <li>
+                        <p>The form will look something like this: <br>
+                        <pre><code class="html">
 &lt;form name="guessForm" onsubmit="submitData(); return false"&gt;
     &lt;input type="text" name="min"&gt;
     &lt;input type="text" name="max"&gt;
@@ -44,16 +52,24 @@
 &lt;/form&gt;
                     </code></pre>
                 </ul>
-            <li><p>A button to submit the form
-                <img src="images/numberGuessGame1.png" class="img-tutorial" alt="">
-            </p></li>
+            <li>
+                <p>A button to submit the form
+                    <img src="images/numberGuessGame1.png" class="img-tutorial" alt="">
+                </p>
+            </li>
 
-            <li><p>Implements the following functions: 
+            <li>
+                <p>Implements the following functions:
                 <ul>
-                    <li><p><code>submitData()</code>. This function will retrieve the form data, and check for validation errors (they need to submit valid numbers AND the low number has to be less than the high number). If there is an error, display the error by calling the updateDOM function and stop the remaining code execution. If there is no error, call the numberGuessGame and pass in min and max as parameters.</p></li>
-                    <li><p><code>updateDOM(value, color)</code>. This function will display the error message if there is a validation error. And later it will also display "CONGRATULATIONS!!! __ is correct!". The value parameter will either be the error message string, or the congratulations message. The color you can use to make the error red, or the congrats message a special color.</p></li>
-                    <li><p><code>numberGuessGame(min, max)</code>. This function will include the loop and the logic to drive the game. Use a do while loop with a condition similar to while(userGuess != actualNumber). Inside the loop, use prompt() to prompt the user for their next guess, and display their progress letting them know if they need to guess higher or lower in the prompts. This function will take a fair bit of thought. Perhaps this code structure may be helpful as you write this code: <br>
-                    <pre><code class="js">
+                    <li>
+                        <p><code>submitData()</code>. This function will retrieve the form data, and check for validation errors (they need to submit valid numbers AND the low number has to be less than the high number). If there is an error, display the error by calling the updateDOM function and stop the remaining code execution. If there is no error, call the numberGuessGame and pass in min and max as parameters.</p>
+                    </li>
+                    <li>
+                        <p><code>updateDOM(value, color)</code>. This function will display the error message if there is a validation error. And later it will also display "CONGRATULATIONS!!! __ is correct!". The value parameter will either be the error message string, or the congratulations message. The color you can use to make the error red, or the congrats message a special color.</p>
+                    </li>
+                    <li>
+                        <p><code>numberGuessGame(min, max)</code>. This function will include the loop and the logic to drive the game. Use a do while loop with a condition similar to while(userGuess != actualNumber). Inside the loop, use prompt() to prompt the user for their next guess, and display their progress letting them know if they need to guess higher or lower in the prompts. This function will take a fair bit of thought. Perhaps this code structure may be helpful as you write this code: <br>
+                        <pre><code class="js">
     function numberGuessGame(min, max) {
         let num = randomNumber(min, max)
         // declare message variable with something like , "I'm thinking of a number between 'min' and 'max', try to guess it"
@@ -67,9 +83,12 @@
         updateDOM(message, "green");
     }
                     </code></pre>
-                    <li><p><code>randomNumber(min, max)</code>. This function will take the numbers the user put in for the range of the game. It will use Math.random to produce a whole,random number within that range. <a href="https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/" target="_blank"> This reference</a> may be helpful.</p></li>
-                    <li><p>The entire structure of your js file will look something like this: <br>
-                    <pre><code class="js">
+                    <li>
+                        <p><code>randomNumber(min, max)</code>. This function will take the numbers the user put in for the range of the game. It will use Math.random to produce a whole,random number within that range. <a href="https://www.geeksforgeeks.org/how-to-generate-random-number-in-given-range-using-javascript/" target="_blank"> This reference</a> may be helpful.</p>
+                    </li>
+                    <li>
+                        <p>The entire structure of your js file will look something like this: <br>
+                        <pre><code class="js">
     function submitData() {
         // retrieve form data -- min and max
 
@@ -91,13 +110,19 @@
     function randomNumber(min, max) { 
         return Math.random() * (max - min) + min;
     } 
-                    </code></pre></p></li>
+                    </code></pre>
+                        </p>
+                    </li>
                 </ul>
         </ul>
         <h2>Stretch Challenges</h2>
         <ul>
-            <li><p>Keep track of how many guesses have been made, and share that number with the user when they guess the right number</p></li>
-            <li><p>Show a list of previous guesses</p></li>
+            <li>
+                <p>Keep track of how many guesses have been made, and share that number with the user when they guess the right number</p>
+            </li>
+            <li>
+                <p>Show a list of previous guesses</p>
+            </li>
         </ul>
         <p>Here is a video demonstration of a sample application that meets these requirements.</p>
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/QHeo2CFOHrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
