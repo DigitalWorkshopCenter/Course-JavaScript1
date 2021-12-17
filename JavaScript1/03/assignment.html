@@ -16,11 +16,18 @@
         body {
             background-color: coral;
         }
+
+        #error {
+            color: red;
+            font-size: 150%;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Happy Images :)</h1>
+    <h1 id="imageHeader">Happy Images :)</h1>
+    <p id="count"></p>
+    <p id="error"></p>
     <form name="imageForm" onsubmit="showImage();return false">
         Please enter the web address of an image: <input type="text" id="userImage" name="userImage">
         <br>
